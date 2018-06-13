@@ -1,0 +1,9 @@
+.text-field:validation-error {
+	-fx-background-color: #ffa0a0 ;
+}
+.combo-box-base:validation-error {
+	-fx-background-color: #ffa0a0 ;
+}
+.label.error-instructions {
+	-fx-text-fill: #ffa0a0 ;
+}

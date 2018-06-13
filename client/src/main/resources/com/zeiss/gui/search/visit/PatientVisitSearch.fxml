@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane id="borderPane" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lastNameLabel" text="%visit.search.label.lastname.label" />
+            <TextField id="lastNameText" fx:id="lastNameText" />
+            <Button id="search" fx:id="search" mnemonicParsing="false" text="%visit.search.button.label" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefWidth="200.0" style="-fx-background-color: #ff444444;" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="close" fx:id="close" mnemonicParsing="false" text="%visit.close.button.label" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView id="tableView" fx:id="tableView" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="visitPatientFirstName" prefWidth="75.0" text="%visit.tableview.tablecolumn.firstname.label" />
+          <TableColumn fx:id="visitPatientLastName" prefWidth="75.0" text="%visit.tableview.tablecolumn.lastname.label" />
+            <TableColumn fx:id="patientVisitDate" prefWidth="75.0" text="%visit.tableview.tablecolumn.visitdate.label" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
