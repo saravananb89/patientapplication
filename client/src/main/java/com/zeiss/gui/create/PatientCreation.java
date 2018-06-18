@@ -53,7 +53,7 @@ public class PatientCreation extends TextFieldValidation {
 
         dialog.setTitle("Patient Create or Update");
 
-        Pattern validEmailText = Pattern.compile("^[a-zA-Z]+[a-zA-Z0-9_-]*@([a-zA-Z0-9]+){1}(\\.[a-zA-Z0-9]+){1,2}");
+        Pattern validEmailText = Pattern.compile("^[a-zA-Z]+[a-zA-Z0-9\\._-]*@([a-zA-Z0-9]+){1}(\\.[a-zA-Z0-9]+){1,2}");
 
         emailText.textProperty().bindBidirectional(patient.emailProperty());
         BooleanBinding validEmailBinding = Bindings.createBooleanBinding(() ->

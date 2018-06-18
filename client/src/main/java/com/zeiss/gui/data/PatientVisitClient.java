@@ -28,4 +28,7 @@ public interface PatientVisitClient {
     @RequestLine("GET /visit/search/{lastName}")
     List<PatientVisit> getPatientsVisitByLastNAme(@Param("lastName") String lastName);
 
+    @RequestLine("DELETE /visit")
+    void clearVisit();
+
 }

@@ -1,13 +1,16 @@
 package com.zeiss.gui;
 
+import com.zeiss.gui.clear.PatientClear;
+import com.zeiss.gui.clear.PatientVisitClear;
+import com.zeiss.gui.create.PatientCreation;
 import com.zeiss.gui.create.PatientVisitCreation;
 import com.zeiss.gui.data.Patient;
 import com.zeiss.gui.data.PatientService;
-import com.zeiss.gui.create.PatientCreation;
 import com.zeiss.gui.data.PatientVisit;
 import com.zeiss.gui.delete.PatientDeletion;
 import com.zeiss.gui.delete.PatientVisitDeletion;
 import com.zeiss.gui.generate.GeneratePatient;
+import com.zeiss.gui.openpatient.OpenPatient;
 import com.zeiss.gui.search.PatientSearch;
 import com.zeiss.gui.search.PatientVisitSearch;
 import com.zeiss.gui.update.PatientUpdate;
@@ -24,6 +27,8 @@ public class PatientPresenter {
     private final PatientService patientService;
     @Inject
     private Provider<GeneratePatient> generatePatient;
+    @Inject
+    private Provider<PatientUpdate> patientUpdateProvider;
 
     @Inject
     public PatientPresenter(PatientView patientView, PatientService patientService) {
@@ -36,10 +41,9 @@ public class PatientPresenter {
         patientModel.setPatients(patientService.getPatients());
     }
 
-    public void loadPatientVisitData()
-    {
+    public void loadPatientVisitData() {
         patientModel.setVisitPatients(patientService.getPatientVisits());
-       System.out.println( patientModel.getVisitPatients());
+        System.out.println(patientModel.getVisitPatients());
     }
 
     public void selectPatient(Patient patient) {
@@ -74,7 +78,7 @@ public class PatientPresenter {
     }
 
     public void updateAction() {
-        new PatientUpdate().showPatientDialog(patientService, patientModel.getSelectedPatient(), this::loadPatientData, patientView.getStage(),
+        patientUpdateProvider.get().showPatientDialog(patientService, patientModel.getSelectedPatient(), this::loadPatientData, patientView.getStage(),
                 patientView.getLocaleService().getLocale());
 
     }
@@ -106,9 +110,24 @@ public class PatientPresenter {
 
     }
 
+    public void clear() {
+        new PatientClear().showPatientDialog(patientService, patientView.getStage(), patientView.getLocaleService().getLocale());
+
+    }
+
+    public void clearVisit() {
+        new PatientVisitClear().showPatientDialog(patientService, patientView.getStage(), patientView.getLocaleService().getLocale());
+
+    }
+
     public void initialize() {
         patientView.bindToModel(patientModel);
         loadPatientData();
         loadPatientVisitData();
+    }
+
+    public void openPatient() {
+        new OpenPatient().showPatientDialog(patientService,patientModel.getSelectedPatient(), patientView.getStage(),
+                patientView.getLocaleService().getLocale(), this::loadPatientData);
     }
 }

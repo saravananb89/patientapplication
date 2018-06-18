@@ -67,6 +67,11 @@ public class PatientVisitController {
         return repository.findByLastName(visitPatientLastName).stream().collect(Collectors.toSet());
     }
 
+    @RequestMapping(method = RequestMethod.DELETE)
+    public void clearVisit() {
+        repository.clear();
+    }
+
 }
 
 @ControllerAdvice(assignableTypes = PatientVisitController.class)

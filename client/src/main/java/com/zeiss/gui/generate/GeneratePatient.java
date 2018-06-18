@@ -15,6 +15,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.Period;
@@ -53,6 +54,9 @@ public class GeneratePatient {
     @Inject
     private LocaleService localeService;
 
+    @Inject
+    private Provider<ViewPreview> viewPreviewProvider;
+
     private final PatientService patientService;
     private BorderPane borderPane;
 
@@ -86,7 +90,9 @@ public class GeneratePatient {
                 FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("CSV files (*.csv)", "*.csv");
                 fileChooser.getExtensionFilters().add(extFilter);
                 file = fileChooser.showOpenDialog(parentStage);
-                browserPathTextField.setText(file.getPath());
+                if (file != null) {
+                    browserPathTextField.setText(file.getPath());
+                }
                 System.out.println(file);
 
             }
@@ -123,6 +129,11 @@ public class GeneratePatient {
         cancel.setOnAction(event -> {
             close(dialog);
         });
+
+        viewPreview.setOnAction(event -> {
+            generatePatients(file);
+            viewPreviewProvider.get().showPatientDialog(patientListMap, parentStage);
+        });
         dialog.showAndWait();
 
     }
@@ -130,7 +141,7 @@ public class GeneratePatient {
     private void persistPatients(Dialog dialog, Stage parentStage, LocaleService localeService) {
         patients.forEach(patientService::create);
         patientVisits.forEach(patientService::createVisit);
-        Main.loadStage(parentStage, localeService.getLocale());
+        Main.loadStage(parentStage, localeService.getLocale(), false);
         close(dialog);
     }
 
@@ -179,7 +190,7 @@ public class GeneratePatient {
 
     private String getEmailId(PatientCSVObject patientCSVObject, String emailPattern) {
         return emailPattern.replaceAll("\\$firstName", patientCSVObject.getFirstName()).
-                replaceAll("\\$lastName", patientCSVObject.getLastName());
+                replaceAll("\\$lastName", patientCSVObject.getLastName()).trim();
     }
 
     private List<PatientCSVObject> processInputFile(String inputFilePath) {

@@ -84,4 +84,13 @@ public class DefaultPatientService implements PatientService {
         return patientClient.getPatientsByFirstNameAndLastNAme(firstName,lastName);
     }
 
+    @Override
+    public void clear() {
+        patientClient.clear();
+    }
+
+    @Override
+    public void clearVisit() {
+        patientVisitClient.clearVisit();
+    }
 }

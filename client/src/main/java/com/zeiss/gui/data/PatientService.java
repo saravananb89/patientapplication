@@ -14,4 +14,6 @@ public interface PatientService {
     List<Patient> getPatientsByLastName(String lastName);
     List<PatientVisit> getVisitPatientsByLastName(String lastName);
     List<Patient> getPatientsByFirstNameAndLastName(String firstName, String lastName);
+    void clear();
+    void clearVisit();
 }

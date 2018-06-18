@@ -27,11 +27,26 @@ public class PatientModel {
 
     private BooleanProperty updateVisitImPossible = new SimpleBooleanProperty();
 
+    private BooleanProperty openPatientImPossible = new SimpleBooleanProperty();
+
     public PatientModel() {
         deletionImPossible.bind(selectedPatient.isNull());
         updateImPossible.bind(selectedPatient.isNull());
         deletionVisitImPossible.bind(selectedVisitPatient.isNull());
         updateVisitImPossible.bind(selectedVisitPatient.isNull());
+        openPatientImPossible.bind(selectedPatient.isNull());
+    }
+
+    public boolean getOpenPatientImPossible() {
+        return openPatientImPossible.get();
+    }
+
+    public BooleanProperty openPatientImPossibleProperty() {
+        return openPatientImPossible;
+    }
+
+    public void setOpenPatientImPossible(boolean openPatientImPossible) {
+        this.openPatientImPossible.set(openPatientImPossible);
     }
 
     public ObservableList<Patient> getPatients() {

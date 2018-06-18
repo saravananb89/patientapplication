@@ -30,4 +30,6 @@ public interface PatientClient {
     @RequestLine("GET /search/{firstName}/{lastName}")
     List<Patient> getPatientsByFirstNameAndLastNAme(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
+    @RequestLine("DELETE")
+    void clear();
 }

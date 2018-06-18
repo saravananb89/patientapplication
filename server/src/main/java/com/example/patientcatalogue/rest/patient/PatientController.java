@@ -48,11 +48,11 @@ public class PatientController {
     public String create(@RequestBody Map<String, Object> body) {
         assert body.containsKey("firstName") && body.containsKey("lastName") && body.containsKey("dob")
                 && body.containsKey("age") && body.containsKey("email");
-        LinkedHashMap<String,Object> dob = (LinkedHashMap<String, Object>) body.get("dob");
-        return repository.create((String)body.get("firstName"),(String)body.get("lastName"),
-                LocalDate.of((Integer)dob.get("year"),(Integer)dob.get("monthValue"),
-                        (Integer)dob.get("dayOfMonth")),
-                (String)body.get("age"),(String) body.get("email"));
+        LinkedHashMap<String, Object> dob = (LinkedHashMap<String, Object>) body.get("dob");
+        return repository.create((String) body.get("firstName"), (String) body.get("lastName"),
+                LocalDate.of((Integer) dob.get("year"), (Integer) dob.get("monthValue"),
+                        (Integer) dob.get("dayOfMonth")),
+                (String) body.get("age"), (String) body.get("email"));
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/{id}")
@@ -60,11 +60,11 @@ public class PatientController {
         assert id != null && !id.isEmpty();
         assert body.containsKey("firstName") && body.containsKey("lastName") && body.containsKey("dob")
                 && body.containsKey("age") && body.containsKey("email");
-        LinkedHashMap<String,Object> dob = (LinkedHashMap<String, Object>) body.get("dob");
-        return repository.update(id, (String)body.get("firstName"),(String)body.get("lastName"),
-                LocalDate.of((Integer)dob.get("year"),(Integer)dob.get("monthValue"),
-                        (Integer)dob.get("dayOfMonth")),
-                (String)body.get("age"),(String) body.get("email"));
+        LinkedHashMap<String, Object> dob = (LinkedHashMap<String, Object>) body.get("dob");
+        return repository.update(id, (String) body.get("firstName"), (String) body.get("lastName"),
+                LocalDate.of((Integer) dob.get("year"), (Integer) dob.get("monthValue"),
+                        (Integer) dob.get("dayOfMonth")),
+                (String) body.get("age"), (String) body.get("email"));
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/{id}")
@@ -81,6 +81,11 @@ public class PatientController {
     @RequestMapping(method = RequestMethod.GET, value = "/search/{firstName}/{lastName}")
     public Set<Patient> searchByFirstNameAndLastName(@PathVariable String firstName, @PathVariable String lastName) {
         return repository.findByFirstNameAndLastName(firstName, lastName).stream().collect(Collectors.toSet());
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE)
+    public void clear() {
+        repository.clear();
     }
 }
 
