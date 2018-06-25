@@ -10,10 +10,10 @@ import java.util.List;
 public interface PatientVisitClient {
 
     @RequestLine("GET /visit/{id}")
-    PatientVisit getById(@Param("id") String id);
+    PatientVisitImpl getById(@Param("id") String id);
 
     @RequestLine("GET /visit")
-    List<PatientVisit> getAll();
+    List<PatientVisitImpl> getAll();
 
     @RequestLine("POST /visit")
     @Headers("Content-Type: application/json")
@@ -27,10 +27,10 @@ public interface PatientVisitClient {
     void update(@Param("id") String id, PatientVisit patientVisit);
 
     @RequestLine("GET /visit/search/{lastName}")
-    List<PatientVisit> getPatientsVisitByLastNAme(@Param("lastName") String lastName);
+    List<PatientVisitImpl> getPatientsVisitByLastNAme(@Param("lastName") String lastName);
 
     @RequestLine("GET /visit/search/{firstName}/{lastName}")
-    List<PatientVisit> getVisitPatientsByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
+    List<PatientVisitImpl> getVisitPatientsByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
 
     @RequestLine("DELETE /visit")

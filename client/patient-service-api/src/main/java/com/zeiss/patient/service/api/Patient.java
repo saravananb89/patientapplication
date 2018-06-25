@@ -1,129 +1,46 @@
 package com.zeiss.patient.service.api;
 
 import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
-public class Patient {
+public interface Patient {
 
-    private final StringProperty id = new SimpleStringProperty();
-    private final StringProperty firstName = new SimpleStringProperty();
-    private final StringProperty lastName = new SimpleStringProperty();
-    private final StringProperty age = new SimpleStringProperty();
-    private final ObjectProperty<LocalDate> dob = new SimpleObjectProperty<>();
-    private final StringProperty email = new SimpleStringProperty();
+     String getId();
 
-    public Patient(String firstName, String lastName, String age, LocalDate dob,String id, String email) {
-        this.firstName.setValue(firstName);
-        this.lastName.setValue(lastName);
-        this.age.setValue(age);
-        this.dob.setValue(dob);
-        this.id.setValue(id);
-        this.email.setValue(email);
-    }
+     StringProperty idProperty();
 
-    public Patient() {
-    }
+     void setId(String id);
 
-    public String getId() {
-        return id.get();
-    }
+     String getEmail();
 
-    public StringProperty idProperty() {
-        return id;
-    }
+     StringProperty emailProperty();
 
-    public void setId(String id) {
-        this.id.set(id);
-    }
+     void setEmail(String email);
 
-    public String getEmail() {
-        return email.get();
-    }
+     String getFirstName();
 
-    public StringProperty emailProperty() {
-        return email;
-    }
+     StringProperty firstNameProperty();
 
-    public void setEmail(String email) {
-        this.email.set(email);
-    }
+     void setFirstName(String firstName);
 
-    public String getFirstName() {
-        return firstName.get();
-    }
+     void setLastName(String lastName);
 
-    public StringProperty firstNameProperty() {
-        return firstName;
-    }
+     void setAge(String age);
 
-    public void setFirstName(String firstName) {
-        this.firstName.set(firstName);
-    }
+     void setDob(String dob);
 
-    public void setLastName(String lastName) {
-        this.lastName.set(lastName);
-    }
+     String getLastName();
 
-    public void setAge(String age) {
-        this.age.set(age);
-    }
+     StringProperty lastNameProperty();
 
-    public void setDob(String dob) {
-        this.dob.set(LocalDate.parse(dob));
-    }
+     String getAge();
 
-    public String getLastName() {
-        return lastName.get();
-    }
+     StringProperty ageProperty();
 
-    public StringProperty lastNameProperty() {
-        return lastName;
-    }
+     LocalDate getDob();
 
-    public String getAge() {
-        return age.get();
-    }
+     ObjectProperty<LocalDate> dobProperty();
 
-    public StringProperty ageProperty() {
-        return age;
-    }
-
-    public LocalDate getDob() {
-        return dob.get();
-    }
-
-    public ObjectProperty<LocalDate> dobProperty() {
-        return dob;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Patient patient = (Patient) o;
-        return Objects.equals(id, patient.id);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id);
-    }
-
-    @Override
-    public String toString() {
-        return "Patient{" +
-                "id=" + id +
-                ", firstName=" + firstName +
-                ", lastName=" + lastName +
-                ", age=" + age +
-                ", dob=" + dob +
-                ", email=" + email +
-                '}';
-    }
 }

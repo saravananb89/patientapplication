@@ -1,10 +1,10 @@
 package com.zeiss.patient.client.gui.generate;
 
 import com.zeiss.patient.client.gui.GuiStarter;
+import com.zeiss.patient.client.gui.localeservice.LocaleService;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
 import com.zeiss.patient.service.api.PatientVisit;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -59,6 +59,10 @@ public class GeneratePatient {
 
     @Inject
     private Provider<ViewPreview> viewPreviewProvider;
+    @Inject
+    private Provider<Patient> patientProvider;
+    @Inject
+    private Provider<PatientVisit> patientVisitProvider;
     @Inject
     private GuiStarter guiStarter;
 
@@ -154,7 +158,7 @@ public class GeneratePatient {
         List<PatientCSVObject> patientCSVObjects = processInputFile(file.getPath());
 
         patientCSVObjects.forEach(patientCSVObject -> {
-            Patient patient1 = new Patient();
+            Patient patient1 = patientProvider.get();
             patient1.setFirstName(patientCSVObject.getFirstName());
             patient1.setLastName(patientCSVObject.getLastName());
             GenerateRandomDate generateRandomDate = new GenerateRandomDate().invoke(betweenDateOfBirth.getValue(), andDateOfBirth.getValue());
@@ -172,7 +176,7 @@ public class GeneratePatient {
                 List<PatientVisit> patientVisitList = new ArrayList<>();
                 int visitCount = Integer.parseInt(visitPerPatient.getText());
                 IntStream.range(0, visitCount).forEach(value -> {
-                    PatientVisit patientVisit = new PatientVisit();
+                    PatientVisit patientVisit = patientVisitProvider.get();
                     patientVisit.setVisitPatientFirstName(patientCSVObject.getFirstName());
                     patientVisit.setVisitPatientLastName(patientCSVObject.getLastName());
                     patientVisit.patientVisitDateProperty().set(new GenerateRandomDate().invoke(visitDateBetween.getValue(), visitDateAnd.getValue())

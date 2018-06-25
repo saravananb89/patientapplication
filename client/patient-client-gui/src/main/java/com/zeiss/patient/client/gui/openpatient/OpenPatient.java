@@ -67,6 +67,8 @@ public class OpenPatient {
     @Inject
     private Provider<PatientUpdate> patientUpdate;
     @Inject
+    private Provider<PatientVisit> patientVisitProvider;
+    @Inject
     private PatientService patientService;
     @Inject
     private LocaleService localeService;
@@ -115,13 +117,13 @@ public class OpenPatient {
 
         edit.setOnAction(event -> patientUpdate.get().showPatientDialog(patient, runnable, parentStage));
 
-        List<PatientVisit> visitPatientsByFirstNameAndLastName = patientService.getVisitPatientsByFirstNameAndLastName
+        List<? extends PatientVisit> visitPatientsByFirstNameAndLastName = patientService.getVisitPatientsByFirstNameAndLastName
                 (patient.getFirstName(), patient.getLastName());
 
         checkForCurrentDate(visitPatientsByFirstNameAndLastName, LocalDate.now());
 
         createVisit.setOnAction(event -> {
-            PatientVisit patientVisit = new PatientVisit();
+            PatientVisit patientVisit = patientVisitProvider.get();
             patientVisit.setVisitPatientFirstName(patient.getFirstName());
             patientVisit.setVisitPatientLastName(patient.getLastName());
             LocalDate now = LocalDate.now();
@@ -138,7 +140,7 @@ public class OpenPatient {
                 fileChooser.getExtensionFilters().add(extFilter);
                 file = fileChooser.showOpenDialog(parentStage);
                 if (file != null) {
-                    Optional<PatientVisit> patientVisit = getCurrentPatientVisit(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), LocalDate.now());
+                    Optional<? extends PatientVisit> patientVisit = getCurrentPatientVisit(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), LocalDate.now());
                     if (patientVisit.isPresent()) {
                         List<File> files = patientVisitFileMap.get(patientVisit.get());
                         if (files == null || files.size() == 0) {
@@ -183,8 +185,8 @@ public class OpenPatient {
 
     }
 
-    public void checkForCurrentDate(List<PatientVisit> visitPatientsByFirstNameAndLastName, LocalDate now) {
-        Optional<PatientVisit> any = getCurrentPatientVisit(visitPatientsByFirstNameAndLastName, now);
+    public void checkForCurrentDate(List<? extends PatientVisit> visitPatientsByFirstNameAndLastName, LocalDate now) {
+        Optional<? extends PatientVisit> any = getCurrentPatientVisit(visitPatientsByFirstNameAndLastName, now);
         if (any.isPresent()) {
             createVisit.setDisable(true);
             uploadDocument.setDisable(false);
@@ -194,7 +196,7 @@ public class OpenPatient {
         }
     }
 
-    public Optional<PatientVisit> getCurrentPatientVisit(List<PatientVisit> visitPatientsByFirstNameAndLastName, LocalDate now) {
+    public Optional<? extends PatientVisit> getCurrentPatientVisit(List<? extends PatientVisit> visitPatientsByFirstNameAndLastName, LocalDate now) {
         return visitPatientsByFirstNameAndLastName.stream().filter(patientVisit ->
                 patientVisit.getPatientVisitDate().isEqual(now)).findAny();
     }
@@ -228,7 +230,7 @@ public class OpenPatient {
         }
     }
 
-    private void reload(List<PatientVisit> visitPatientsByFirstNameAndLastName) {
+    private void reload(List<? extends PatientVisit> visitPatientsByFirstNameAndLastName) {
         TreeItem<Object> treeItem = new TreeItem();
         List<TreeItem<Object>> treeItemList = visitPatientsByFirstNameAndLastName.stream().map(patientVisit -> {
             TreeItem<Object> child = new TreeItem<Object>();

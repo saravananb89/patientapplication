@@ -67,9 +67,9 @@ public class PatientVisitCreation {
 
         firstNameText.textProperty().addListener((n, o, v) -> {
             if (!v.isEmpty() && lastNameText.textProperty().isNotEmpty().get()) {
-                List<Patient> patientsVisitListByFirstNameAndLastName = patientService.
+                List<? extends Patient> patientsVisitListByFirstNameAndLastName = patientService.
                         getPatientsByFirstNameAndLastName(v, lastNameText.getText());
-                Optional<Patient> patient = patientsVisitListByFirstNameAndLastName.stream().findFirst().filter(p -> p.getFirstName().equals(v)
+                Optional<? extends Patient> patient = patientsVisitListByFirstNameAndLastName.stream().findFirst().filter(p -> p.getFirstName().equals(v)
                         && p.getLastName().equals(lastNameText.getText()));
                 if (patient.isPresent()) {
                     patientExist.setValue(true);
@@ -84,9 +84,9 @@ public class PatientVisitCreation {
 
         lastNameText.textProperty().addListener((n, o, v) -> {
             if (!v.isEmpty() && firstNameText.textProperty().isNotEmpty().get()) {
-                List<Patient> patientsListByFirstNameAndLastName = patientService.
+                List<? extends Patient> patientsListByFirstNameAndLastName = patientService.
                         getPatientsByFirstNameAndLastName(firstNameText.getText(), v);
-                Optional<Patient> patient = patientsListByFirstNameAndLastName.stream().findFirst().
+                Optional<? extends Patient> patient = patientsListByFirstNameAndLastName.stream().findFirst().
                         filter(p -> p.getLastName().equals(v)
                                 && p.getFirstName().equals(firstNameText.getText()));
                 if (patient.isPresent()) {

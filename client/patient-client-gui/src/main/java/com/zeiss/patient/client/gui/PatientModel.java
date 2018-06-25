@@ -56,7 +56,7 @@ public class PatientModel {
         return patients;
     }
 
-    public void setPatients(List<Patient> patients) {
+    public void setPatients(List<? extends Patient> patients) {
         this.patients.setValue(FXCollections.observableArrayList(patients));
     }
 
@@ -96,7 +96,7 @@ public class PatientModel {
         return visitPatients;
     }
 
-    public void setVisitPatients(List<PatientVisit> visitPatients) {
+    public void setVisitPatients(List<? extends PatientVisit> visitPatients) {
         this.visitPatients.setValue(FXCollections.observableArrayList(visitPatients));
     }
 

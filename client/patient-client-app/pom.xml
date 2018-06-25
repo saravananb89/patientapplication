@@ -34,6 +34,26 @@
             <artifactId>patient-service-api</artifactId>
             <version>2.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>user-service-impl</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>user-service-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>document-service-impl</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>document-service-api</artifactId>
+            <version>2.0</version>
+        </dependency>
     </dependencies>
 
 </project>

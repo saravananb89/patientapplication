@@ -29,12 +29,12 @@ public class DefaultPatientService implements PatientService {
     }
 
 
-    public List<Patient> getPatients() {
+    public List<? extends Patient> getPatients() {
 
         return patientClient.getAll();
     }
 
-    public List<PatientVisit> getPatientVisits(){
+    public List<? extends PatientVisit> getPatientVisits(){
         return patientVisitClient.getAll();
     }
 
@@ -72,22 +72,22 @@ public class DefaultPatientService implements PatientService {
         patientVisitClient.update(patientVisit.getId(), patientVisit);
     }
 
-    public List<Patient> getPatientsByLastName(String lastName) {
+    public List<? extends Patient> getPatientsByLastName(String lastName) {
 
         return patientClient.getPatientsByLastNAme(lastName);
     }
 
-    public List<PatientVisit> getVisitPatientsByLastName(String lastName) {
+    public List<? extends PatientVisit> getVisitPatientsByLastName(String lastName) {
 
         return patientVisitClient.getPatientsVisitByLastNAme(lastName);
     }
 
-    public List<Patient> getPatientsByFirstNameAndLastName(String firstName, String lastName) {
+    public List<? extends Patient> getPatientsByFirstNameAndLastName(String firstName, String lastName) {
 
         return patientClient.getPatientsByFirstNameAndLastNAme(firstName,lastName);
     }
 
-    public List<PatientVisit> getVisitPatientsByFirstNameAndLastName(String firstName, String lastName) {
+    public List<? extends PatientVisit> getVisitPatientsByFirstNameAndLastName(String firstName, String lastName) {
 
         return patientVisitClient.getVisitPatientsByFirstNameAndLastName(firstName,lastName);
     }
