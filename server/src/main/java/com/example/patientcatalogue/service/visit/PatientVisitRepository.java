@@ -58,4 +58,6 @@ public interface PatientVisitRepository {
      */
     List<PatientVisit> findByLastName(String lastName);
 
+    List<PatientVisit> findByFirstNameAndLastName(String firstName, String lastName);
+
 }

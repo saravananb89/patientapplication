@@ -61,4 +61,10 @@ public class PatientVisitRepositoryDatabase implements PatientVisitRepository {
         return patientVisitDTORepository.findByLastName(lastName).stream().map(PatientVisitDTO::getPatientVisit).collect(Collectors.toList());
     }
 
+    @Override
+    public List<PatientVisit> findByFirstNameAndLastName(String firstName, String lastName) {
+        return patientVisitDTORepository.findByFirstNameAndLastName(firstName, lastName).stream().
+                map(PatientVisitDTO::getPatientVisit).collect(Collectors.toList());
+    }
+
 }

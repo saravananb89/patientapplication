@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface PatientVisitDTORepository extends CrudRepository<PatientVisitDTO,Integer> {
     List<PatientVisitDTO> findByLastName(String lastName);
+    List<PatientVisitDTO> findByFirstNameAndLastName(String firstName, String lastName);
 }

@@ -72,6 +72,11 @@ public class PatientVisitController {
         repository.clear();
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/search/{firstName}/{lastName}")
+    public Set<PatientVisit> searchByFirstNameAndLastName(@PathVariable String firstName, @PathVariable String lastName) {
+        return repository.findByFirstNameAndLastName(firstName, lastName).stream().collect(Collectors.toSet());
+    }
+
 }
 
 @ControllerAdvice(assignableTypes = PatientVisitController.class)
