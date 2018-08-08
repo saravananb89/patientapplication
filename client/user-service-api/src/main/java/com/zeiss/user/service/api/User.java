@@ -1,16 +1,35 @@
-package com.zeiss.patient.service.api;
+package com.zeiss.user.service.api;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.StringProperty;
 
 import java.time.LocalDate;
+import java.util.Locale;
 
-public interface Patient {
+public interface User {
 
-     String getUserName();
+    void setUserName(String userName);
 
-     StringProperty userNameProperty();
+    void setPassword(String password);
 
-     void setUserName(String userName);
+    void setPreferredLocale(String preferredLocale);
+
+    void setLastLogin(String lastLogin);
+
+    String getUserName();
+
+    StringProperty userNameProperty();
+
+    String getPassword();
+
+    StringProperty passwordProperty();
+
+    Locale getPreferredLocale();
+
+    ObjectProperty<Locale> preferredLocaleProperty();
+
+    LocalDate getLastLogin();
+
+    ObjectProperty<LocalDate> lastLoginProperty();
 
 }

@@ -1,6 +1,9 @@
 package com.example.patientcatalogue.data.user;
 
 
+import com.example.patientcatalogue.service.patient.Patient;
+import com.example.patientcatalogue.service.user.User;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,7 +14,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "usertable")
 public class UserDTO {
-    @Column(name = "userName")
+    @Column(name = "userName", length = 20)
     @Id
     private String userName;
     @Column(name = "password")
@@ -20,6 +23,16 @@ public class UserDTO {
     private String preferredLocale;
     @Column(name = "lastLogin")
     private LocalDate lastLogin;
+
+    public UserDTO() {
+    }
+
+    public UserDTO(String userName, String password, String preferredLocale, LocalDate lastLogin) {
+        this.userName = userName;
+        this.password = password;
+        this.preferredLocale = preferredLocale;
+        this.lastLogin = lastLogin;
+    }
 
     public String getUserName() {
         return userName;
@@ -51,6 +64,10 @@ public class UserDTO {
 
     public void setLastLogin(LocalDate lastLogin) {
         this.lastLogin = lastLogin;
+    }
+
+    public User getUser(){
+        return new User(userName,password,preferredLocale,lastLogin);
     }
 
     @Override

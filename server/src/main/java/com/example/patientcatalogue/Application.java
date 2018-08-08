@@ -2,6 +2,8 @@ package com.example.patientcatalogue;
 
 import com.example.patientcatalogue.service.patient.PatientRepository;
 import com.example.patientcatalogue.service.patient.PatientRepositoryDatabase;
+import com.example.patientcatalogue.service.user.UserRepository;
+import com.example.patientcatalogue.service.user.UserRepositoryDatabase;
 import com.example.patientcatalogue.service.visit.PatientVisitRepository;
 import com.example.patientcatalogue.service.visit.PatientVisitRepositoryDatabase;
 import org.springframework.boot.SpringApplication;
@@ -25,5 +27,10 @@ public class Application {
     @Bean
     PatientVisitRepository patientVisitRepository() {
         return new PatientVisitRepositoryDatabase();
+    }
+
+    @Bean
+    UserRepository userRepository() {
+        return new UserRepositoryDatabase();
     }
 }

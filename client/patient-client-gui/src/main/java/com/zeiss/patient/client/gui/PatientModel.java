@@ -2,6 +2,7 @@ package com.zeiss.patient.client.gui;
 
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientVisit;
+import com.zeiss.user.service.api.User;
 import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class PatientModel {
 
-    private ListProperty<Patient> patients = new SimpleListProperty<>();
+    //Patients
 
     private ObjectProperty<Patient> selectedPatient = new SimpleObjectProperty<>();
 
@@ -18,6 +19,11 @@ public class PatientModel {
 
     private BooleanProperty updateImPossible = new SimpleBooleanProperty();
 
+    private ListProperty<Patient> patients = new SimpleListProperty<>();
+
+    private BooleanProperty openPatientImPossible = new SimpleBooleanProperty();
+
+    //Patient Visits
     private ListProperty<PatientVisit> visitPatients = new SimpleListProperty<>();
 
     private ObjectProperty<PatientVisit> selectedVisitPatient = new SimpleObjectProperty<>();
@@ -26,7 +32,15 @@ public class PatientModel {
 
     private BooleanProperty updateVisitImPossible = new SimpleBooleanProperty();
 
-    private BooleanProperty openPatientImPossible = new SimpleBooleanProperty();
+    //User
+    private ListProperty<User> users = new SimpleListProperty<>();
+
+    private ObjectProperty<User> selectedUser = new SimpleObjectProperty<>();
+
+    private BooleanProperty deletionUserImPossible = new SimpleBooleanProperty();
+
+    private BooleanProperty updateUserImPossible = new SimpleBooleanProperty();
+
 
     public PatientModel() {
         deletionImPossible.bind(selectedPatient.isNull());
@@ -34,6 +48,8 @@ public class PatientModel {
         deletionVisitImPossible.bind(selectedVisitPatient.isNull());
         updateVisitImPossible.bind(selectedVisitPatient.isNull());
         openPatientImPossible.bind(selectedPatient.isNull());
+        deletionUserImPossible.bind(selectedUser.isNull());
+        updateUserImPossible.bind(selectedUser.isNull());
     }
 
     public boolean getOpenPatientImPossible() {
@@ -128,17 +144,62 @@ public class PatientModel {
         return updateVisitImPossible;
     }
 
+    public ObservableList<User> getUsers() {
+        return users.get();
+    }
+
+    public ListProperty<User> usersProperty() {
+        return users;
+    }
+
+    public void setUsers(List<? extends User> users) {
+        this.users.setValue(FXCollections.observableArrayList(users));
+    }
+
+    public User getSelectedUser() {
+        return selectedUser.get();
+    }
+
+    public ObjectProperty<User> selectedUserProperty() {
+        return selectedUser;
+    }
+
+    public void setSelectedUser(User selectedUser) {
+        this.selectedUser.set(selectedUser);
+    }
+
+    public boolean isDeletionUserImPossible() {
+        return deletionUserImPossible.get();
+    }
+
+    public BooleanProperty deletionUserImPossibleProperty() {
+        return deletionUserImPossible;
+    }
+
+    public boolean isUpdateUserImPossible() {
+        return updateUserImPossible.get();
+    }
+
+    public BooleanProperty updateUserImPossibleProperty() {
+        return updateUserImPossible;
+    }
+
     @Override
     public String toString() {
         return "PatientModel{" +
-                "patients=" + patients +
-                ", selectedPatient=" + selectedPatient +
+                "selectedPatient=" + selectedPatient +
                 ", deletionImPossible=" + deletionImPossible +
                 ", updateImPossible=" + updateImPossible +
+                ", patients=" + patients +
+                ", openPatientImPossible=" + openPatientImPossible +
                 ", visitPatients=" + visitPatients +
                 ", selectedVisitPatient=" + selectedVisitPatient +
                 ", deletionVisitImPossible=" + deletionVisitImPossible +
                 ", updateVisitImPossible=" + updateVisitImPossible +
+                ", users=" + users +
+                ", selectedUser=" + selectedUser +
+                ", deletionUserImPossible=" + deletionUserImPossible +
+                ", updateUserImPossible=" + updateUserImPossible +
                 '}';
     }
 }
