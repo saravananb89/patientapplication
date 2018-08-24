@@ -1,9 +1,7 @@
 package com.example.patientcatalogue.rest.visit;
 
-import com.example.patientcatalogue.service.patient.Patient;
-import com.example.patientcatalogue.service.patient.PatientRepository;
 import com.example.patientcatalogue.service.visit.PatientVisit;
-import com.example.patientcatalogue.service.visit.PatientVisitRepository;
+import com.example.patientcatalogue.service.visit.PatientVisitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +16,10 @@ import java.util.stream.Collectors;
 @RequestMapping("/visit")
 public class PatientVisitController {
 
-    private PatientVisitRepository repository;
+    private PatientVisitService repository;
 
     @Autowired
-    public PatientVisitController(PatientVisitRepository repository) {
+    public PatientVisitController(PatientVisitService repository) {
         this.repository = repository;
     }
 

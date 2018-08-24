@@ -16,16 +16,13 @@ import javafx.stage.Stage;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.Period;
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class GeneratePatient {
 
@@ -66,7 +63,13 @@ public class GeneratePatient {
     @Inject
     private GuiStarter guiStarter;
 
+    @Inject
+    private DataGenerationService dataGenerationService;
+    @Inject
+    private DataPersistenceService dataPersistenceService;
+
     private final PatientService patientService;
+    private final PatientGeneratedProgressBar patientGeneratedProgressBar;
     private BorderPane borderPane;
 
     private final List<Patient> patients = new ArrayList<>();
@@ -75,22 +78,34 @@ public class GeneratePatient {
     private File file;
 
     @Inject
-    public GeneratePatient(PatientService patientService) {
+    public GeneratePatient(PatientService patientService, PatientGeneratedProgressBar patientGeneratedProgressBar) {
         this.patientService = patientService;
+        this.patientGeneratedProgressBar = patientGeneratedProgressBar;
         loadFxml();
     }
 
     public void showPatientDialog(Stage parentStage) {
 
+        final ProgressBar progressBar = new ProgressBar(0);
+        final ProgressIndicator progressIndicator = new ProgressIndicator(0);
+        final Button progressClose = new Button("Cancel");
+
+        final Label statusLabel = new Label();
+
         Dialog<String> dialog = new Dialog();
+
+        Dialog<String> progressDialog = new Dialog();
 
         dialog.initOwner(parentStage);
 
         dialog.setTitle("Generate Patient Test Data");
 
+        DataGenerationInputParameters input = new DataGenerationInputParameters();
+
         betweenDateOfBirth.setValue(LocalDate.of(1900, 1, 1));
         andDateOfBirth.setValue(LocalDate.now());
         email.setText("$firstName.$lastName@gmail.com");
+
 
         load.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -107,9 +122,27 @@ public class GeneratePatient {
             }
         });
 
+        dialog.setHeight(Control.USE_COMPUTED_SIZE);
+
         patientGenerate.setOnAction(event -> {
-            generatePatients(file);
-            persistPatients(dialog, parentStage, localeService);
+            doPatientGenerate(dialog, progressDialog, input);
+            dataGenerationService.setOnSucceeded(t -> doDataGenerate(parentStage,
+                    dialog, progressDialog));
+        });
+
+        progressClose.setOnAction(event -> {
+            patientGenerate.setDisable(false);
+            dataGenerationService.cancel();
+            dataPersistenceService.cancel();
+            progressBar.progressProperty().unbind();
+            progressIndicator.progressProperty().unbind();
+            statusLabel.textProperty().unbind();
+            //
+            progressBar.setProgress(0);
+            progressIndicator.setProgress(0);
+            System.out.println("cancelled.");
+            progressDialog.setResult("True");
+            progressDialog.close();
         });
 
         visitPerPatient.disableProperty().set(true);
@@ -136,94 +169,103 @@ public class GeneratePatient {
         dialog.getDialogPane().contentProperty().setValue(borderPane);
 
         cancel.setOnAction(event -> {
+           /* patientGenerate.setDisable(false);
+            cancel.setDisable(true);*/
+            // copyWorker.cancel(true);
             close(dialog);
         });
 
-        viewPreview.setOnAction(event -> {
-            generatePatients(file);
-            viewPreviewProvider.get().showPatientDialog(patientListMap, parentStage);
+        viewPreview.setOnAction((ActionEvent event) -> {
+            patientGenerate.setDisable(true);
+            progressBar.setProgress(0);
+            progressIndicator.setProgress(0);
+            cancel.setDisable(false);
+            setInputParameters(input);
+            dataGenerationService.setInput(input);
+
+            progressBar.progressProperty().unbind();
+            progressBar.progressProperty().bind(dataGenerationService.progressProperty());
+
+            progressIndicator.progressProperty().unbind();
+
+            progressIndicator.progressProperty().bind(dataGenerationService.progressProperty());
+
+            // Unbind text property for Label.
+            statusLabel.textProperty().unbind();
+
+            // Bind the text property of Label
+            // with message property of Task
+            statusLabel.textProperty().bind(dataGenerationService.messageProperty());
+
+
+            dataGenerationService.setOnSucceeded(t -> {
+                DataGenerationOutput output = dataGenerationService.getValue();
+
+                progressBar.progressProperty().unbind();
+                progressIndicator.progressProperty().unbind();
+                statusLabel.textProperty().unbind();
+                progressDialog.setResult("True");
+                progressDialog.close();
+                     /*   dialog.setResult("True");
+                        dialog.close();*/
+                patientGenerate.setDisable(false);
+                viewPreviewProvider.get().showPatientDialog(output.getPatientToVisitMap(), parentStage);
+                dataGenerationService.reset();
+            });
+            progressDialog.getDialogPane().setContent(patientGeneratedProgressBar.getParent());
+            dataGenerationService.start();
         });
         dialog.showAndWait();
+    }
 
+    public void doPatientGenerate(Dialog<String> dialog, Dialog<String> progressDialog, DataGenerationInputParameters input) {
+        progressDialog.initOwner(dialog.getDialogPane().getContent().getScene().getWindow());
+
+        progressDialog.setTitle("Generating Patient");
+
+        setInputParameters(input);
+
+        patientGenerate.setDisable(true);
+        dataGenerationService.setInput(input);
+        patientGeneratedProgressBar.unbind();
+        patientGeneratedProgressBar.bind(dataGenerationService.progressProperty(), dataGenerationService.messageProperty());
+        progressDialog.getDialogPane().setContent(patientGeneratedProgressBar.getParent());
+        progressDialog.show();
+        dataGenerationService.start();
+    }
+
+    public void doDataGenerate(Stage parentStage, Dialog<String> dialog, Dialog<String> progressDialog) {
+        DataGenerationOutput output = (DataGenerationOutput) dataGenerationService.getValue();
+        dataPersistenceService.setOutput(output);
+        patientGeneratedProgressBar.unbind();
+        patientGeneratedProgressBar.bind(dataPersistenceService.progressProperty(), dataPersistenceService.messageProperty());
+        dataPersistenceService.setOnSucceeded(c -> {
+            patientGeneratedProgressBar.unbind();
+            progressDialog.setResult("True");
+            progressDialog.close();
+            dataPersistenceService.reset();
+            persistPatients(dialog, parentStage, localeService);
+        });
+        dataPersistenceService.start();
+        dataGenerationService.reset();
+    }
+
+    public void setInputParameters(DataGenerationInputParameters input) {
+        input.setCsvFile(file);
+        input.setDobFrom(betweenDateOfBirth.getValue());
+        input.setDobUntil(andDateOfBirth.getValue());
+        input.setEmailPattern(email.getText());
+        input.setGenerateVisits(generatePatientVisitCheckBox.isSelected());
+        input.setVisitCount(Integer.parseInt(visitPerPatient.getText()));
+        input.setVisitDateFrom(visitDateBetween.getValue());
+        input.setGetVisitDateUntil(visitDateAnd.getValue());
     }
 
     private void persistPatients(Dialog dialog, Stage parentStage, LocaleService localeService) {
-        patients.forEach(patientService::create);
-        patientVisits.forEach(patientService::createVisit);
         guiStarter.loadStage(parentStage, localeService.getLocale(), false);
         close(dialog);
     }
 
-    private void generatePatients(File file) {
-        List<PatientCSVObject> patientCSVObjects = processInputFile(file.getPath());
-
-        patientCSVObjects.forEach(patientCSVObject -> {
-            Patient patient1 = patientProvider.get();
-            patient1.setFirstName(patientCSVObject.getFirstName());
-            patient1.setLastName(patientCSVObject.getLastName());
-            GenerateRandomDate generateRandomDate = new GenerateRandomDate().invoke(betweenDateOfBirth.getValue(), andDateOfBirth.getValue());
-            LocalDate now = generateRandomDate.getNow();
-            LocalDate randomBirthDate = generateRandomDate.getRandomBirthDate();
-            String age = getAge(now, randomBirthDate);
-            String emailId = getEmailId(patientCSVObject, email.getText());
-            patient1.setAge(age);
-            patient1.setEmail(emailId);
-            patient1.dobProperty().set(randomBirthDate);
-
-            patients.add(patient1);
-
-            if (generatePatientVisitCheckBox.isSelected()) {
-                List<PatientVisit> patientVisitList = new ArrayList<>();
-                int visitCount = Integer.parseInt(visitPerPatient.getText());
-                IntStream.range(0, visitCount).forEach(value -> {
-                    PatientVisit patientVisit = patientVisitProvider.get();
-                    patientVisit.setVisitPatientFirstName(patientCSVObject.getFirstName());
-                    patientVisit.setVisitPatientLastName(patientCSVObject.getLastName());
-                    patientVisit.patientVisitDateProperty().set(new GenerateRandomDate().invoke(visitDateBetween.getValue(), visitDateAnd.getValue())
-                            .getRandomBirthDate());
-                    patientVisitList.add(patientVisit);
-
-                });
-                patientVisits.addAll(patientVisitList);
-                patientListMap.put(patient1, patientVisitList);
-            }
-
-        });
-
-        System.out.println(patients + "" + patientVisits);
-    }
-
-    private String getAge(LocalDate now, LocalDate randomBirthDate) {
-        return "" + Period.between(randomBirthDate, now).getYears();
-    }
-
-    private String getEmailId(PatientCSVObject patientCSVObject, String emailPattern) {
-        return emailPattern.replaceAll("\\$firstName", patientCSVObject.getFirstName()).
-                replaceAll("\\$lastName", patientCSVObject.getLastName()).trim();
-    }
-
-    private List<PatientCSVObject> processInputFile(String inputFilePath) {
-        List<PatientCSVObject> inputList = new ArrayList<>();
-        try (BufferedReader br =
-                     new BufferedReader(new FileReader(inputFilePath))) {
-            // skip the header of the csv
-            inputList = br.lines().map(mapToItem).collect(Collectors.toList());
-            br.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return inputList;
-    }
-
-    private Function<String, PatientCSVObject> mapToItem = (line) -> {
-        String COMMA = ",";
-        String[] p = line.split(COMMA);// a CSV has comma separated lines
-        PatientCSVObject item = new PatientCSVObject();
-        item.setFirstName(p[1]);//<-- this is the first column in the csv file
-        item.setLastName(p[0]);
-        //more initialization goes here
-        return item;
-    };
 
     public void close(Dialog<String> dialog) {
         dialog.setResult("True");
@@ -243,27 +285,4 @@ public class GeneratePatient {
         }
     }
 
-    private class GenerateRandomDate {
-        private LocalDate now;
-        private LocalDate randomBirthDate;
-
-        public LocalDate getNow() {
-            return now;
-        }
-
-        public LocalDate getRandomBirthDate() {
-            return randomBirthDate;
-        }
-
-        public GenerateRandomDate invoke(LocalDate minDate, LocalDate maxDate) {
-            now = LocalDate.now();
-            Random random = new Random();
-            int minDay = (int) minDate.toEpochDay();
-            int maxDay = (int) maxDate.toEpochDay();
-            long randomDay = (long) minDay + random.nextInt(maxDay - minDay);
-
-            randomBirthDate = LocalDate.ofEpochDay(randomDay);
-            return this;
-        }
-    }
 }

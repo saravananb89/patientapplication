@@ -87,15 +87,15 @@
                   </BorderPane>
                </content>
             </Tab>
-               <Tab id="VisitsTab" text="%tabpane.tab.user.label">
+               <Tab id="VisitsTab" text="%tabpane.tab.role.label">
                   <content>
                      <BorderPane prefHeight="200.0" prefWidth="200.0">
                         <center>
                            <TableView fx:id="userTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                               <columns>
-                                 <TableColumn fx:id="userName" prefWidth="116.0" text="%user.tableview.tablecolumn.username.label" />
-                                 <TableColumn fx:id="preferredLocale" prefWidth="109.0" text="%user.tableview.tablecolumn.preferredlocale.label" />
-                                 <TableColumn fx:id="lastLogin" minWidth="0.0" prefWidth="119.0" text="%user.tableview.tablecolumn.lastlogin.label" />
+                                 <TableColumn fx:id="userName" prefWidth="116.0" text="%role.tableview.tablecolumn.username.label" />
+                                 <TableColumn fx:id="preferredLocale" prefWidth="109.0" text="%role.tableview.tablecolumn.preferredlocale.label" />
+                                 <TableColumn fx:id="lastLogin" minWidth="0.0" prefWidth="119.0" text="%role.tableview.tablecolumn.lastlogin.label" />
                               </columns>
                               <columnResizePolicy>
                                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

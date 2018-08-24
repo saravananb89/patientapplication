@@ -57,7 +57,7 @@ public class PatientVisitClear {
     private void loadFxml(Locale locale) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("/com/zeiss/gui/clear/PatientClear.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("/com/zeiss/patient/client/gui/clear/PatientClear.fxml"));
             fxmlLoader.setController(this);
             fxmlLoader.setResources(ResourceBundle.getBundle("messages", locale));
             vbox = (VBox) fxmlLoader.load();

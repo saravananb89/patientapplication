@@ -1,7 +1,7 @@
 package com.example.patientcatalogue.rest.user;
 
 import com.example.patientcatalogue.service.user.User;
-import com.example.patientcatalogue.service.user.UserRepository;
+import com.example.patientcatalogue.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 @RequestMapping("/user")
 public class UserController {
 
-    private UserRepository repository;
+    private UserService repository;
 
     @Autowired
-    public UserController(UserRepository repository) {
+    public UserController(UserService repository) {
         this.repository = repository;
     }
 

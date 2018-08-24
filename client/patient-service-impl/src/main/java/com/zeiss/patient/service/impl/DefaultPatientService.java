@@ -34,6 +34,11 @@ public class DefaultPatientService implements PatientService {
         return patientClient.getAll();
     }
 
+    public PatientImpl getPatientsById(String id) {
+
+        return patientClient.getById(id);
+    }
+
     public List<? extends PatientVisit> getPatientVisits(){
         return patientVisitClient.getAll();
     }

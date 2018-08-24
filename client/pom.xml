@@ -21,6 +21,8 @@
         <module>user-service-impl</module>
 		<module>document-service-api</module>
         <module>document-service-impl</module>
+        <module>role-service-api</module>
+		<module>role-service-impl</module>
     </modules>
 
 

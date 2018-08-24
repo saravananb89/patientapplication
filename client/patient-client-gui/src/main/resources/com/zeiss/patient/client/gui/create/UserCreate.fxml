@@ -13,7 +13,7 @@
    <children>
       <HBox prefWidth="200.0">
          <children>
-            <Label fx:id="firstName" prefWidth="100.0" text="%user.label.username.label" />
+            <Label fx:id="firstName" prefWidth="100.0" text="%role.label.username.label" />
             <TextField id="firstNameText" fx:id="userName" />
          </children>
          <padding>
@@ -22,7 +22,7 @@
       </HBox>
       <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0">
          <children>
-            <Label fx:id="firstName1" prefWidth="100.0" text="%user.label.password.label" />
+            <Label fx:id="firstName1" prefWidth="100.0" text="%role.label.password.label" />
             <PasswordField fx:id="password" />
          </children>
          <padding>
@@ -31,7 +31,7 @@
       </HBox>
       <HBox prefWidth="200.0">
          <children>
-            <Label id="lastName" fx:id="lastName" prefWidth="100.0" text="%user.tableview.tablecolumn.preferredlocale.label" />
+            <Label id="lastName" fx:id="lastName" prefWidth="100.0" text="%role.tableview.tablecolumn.preferredlocale.label" />
             <ChoiceBox fx:id="preferredLocale" prefWidth="150.0" />
          </children>
          <padding>

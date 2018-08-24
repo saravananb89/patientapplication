@@ -1,6 +1,8 @@
 package com.zeiss.patient.client.gui;
 
 import com.google.inject.Inject;
+import com.zeiss.user.service.api.User;
+import com.zeiss.user.service.api.UserService;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
@@ -16,6 +18,8 @@ import javafx.stage.Stage;
 import org.controlsfx.control.ButtonBar;
 import org.controlsfx.dialog.Dialog;
 
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Locale;
 
 public class GuiStarter {
@@ -26,6 +30,8 @@ public class GuiStarter {
 
     @Inject
     private PatientView patientView;
+    @Inject
+    private UserService userService;
 
     public void start(Stage primaryStage) {
         loadLoginDialog(primaryStage);
@@ -37,16 +43,23 @@ public class GuiStarter {
         TextField username = new TextField();
         PasswordField password = new PasswordField();
         actionLogin.setOnAction(event -> {
-            if ((username.getText().equals("admin") && password.getText().equals("admin")) ||
-                    (username.getText().equals("user") && password.getText().equals("user"))) {
+
+            List<? extends User> users = userService.getUsersByUserNameAndPassword(username.getText(), password.getText());
+
+            if (users.size() != 0) {
+                User user = users.get(0);
+                user.lastLoginProperty().set(LocalDate.now());
+                userService.update(user);
+                statusLabel = "Logged in as " + user.getUserName();
+                dlg.hide();
+                primaryStage.close();
+                loadStage(primaryStage, user.getPreferredLocale(), false);
+
+            } else if ((username.getText().equals("user") && password.getText().equals("user"))) {
                 statusLabel = "Logged in as " + username.getText();
                 dlg.hide();
                 primaryStage.close();
-                if (username.getText().equals("admin")) {
-                    loadStage(primaryStage, Locale.ENGLISH, false);
-                } else if (username.getText().equals("user")) {
-                    loadStage(primaryStage, Locale.GERMAN, false);
-                }
+                loadStage(primaryStage, Locale.GERMAN, false);
             }
         });
 

@@ -7,8 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.example.patientcatalogue.service.patient.Patient;
-import com.example.patientcatalogue.service.patient.PatientRepository;
-import com.example.patientcatalogue.service.visit.PatientVisit;
+import com.example.patientcatalogue.service.patient.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -25,10 +24,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class PatientController {
 
-    private PatientRepository repository;
+    private PatientService repository;
 
     @Autowired
-    public PatientController(PatientRepository repository) {
+    public PatientController(PatientService repository) {
         this.repository = repository;
     }
 

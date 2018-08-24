@@ -1,9 +1,9 @@
 package com.zeiss.patient.client.gui.generate;
 
 import com.google.inject.Inject;
+import com.zeiss.patient.client.gui.localeservice.LocaleService;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientVisit;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
@@ -62,13 +62,17 @@ public class ViewPreview {
             List<TreeItem<TreeViewItemWrapper>> collect = patientListEntry.getValue().stream().map(patientVisit -> {
                 TreeItem<TreeViewItemWrapper> childVisit = new TreeItem<>();
                 childVisit.setValue(new PatientVisitWrapper(patientVisit));
+                childVisit.setExpanded(true);
                 return childVisit;
             }).collect(Collectors.toList());
+            child.setExpanded(true);
             child.getChildren().addAll(collect);
             return child;
         }).collect(Collectors.toList());
 
         treeItem.getChildren().addAll(treeItemList);
+
+        treeTableView.showRootProperty().set(false);
 
         dialog.showAndWait();
     }

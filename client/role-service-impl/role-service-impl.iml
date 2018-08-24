@@ -9,7 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="module" module-name="role-service-api" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:9.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet:animal-sniffer-annotation:1.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-jackson:9.4.0" level="project" />

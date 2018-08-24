@@ -2,13 +2,16 @@ package com.zeiss.patient.client.gui.openpatient;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
+import com.zeiss.document.service.api.Document;
+import com.zeiss.document.service.api.DocumentService;
+import com.zeiss.patient.client.gui.localeservice.LocaleService;
+import com.zeiss.patient.client.gui.update.PatientUpdate;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
 import com.zeiss.patient.service.api.PatientVisit;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
-import com.zeiss.patient.client.gui.update.PatientUpdate;
 import javafx.beans.binding.Bindings;
 import javafx.beans.value.ObservableValue;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -23,7 +26,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -72,6 +80,8 @@ public class OpenPatient {
     private PatientService patientService;
     @Inject
     private LocaleService localeService;
+    @Inject
+    private DocumentService documentService;
 
     private File file;
 
@@ -80,7 +90,7 @@ public class OpenPatient {
         //do nothing
     }
 
-    Map<PatientVisit, List<File>> patientVisitFileMap = new HashMap<>();
+    private Map<PatientVisit, List<String>> patientVisitFileMap = new HashMap<>();
 
     public void showPatientDialog(Patient patient, Stage parentStage,
                                   Runnable runnable) {
@@ -129,7 +139,7 @@ public class OpenPatient {
             LocalDate now = LocalDate.now();
             patientVisit.patientVisitDateProperty().set(now);
             patientService.createVisit(patientVisit);
-            reload(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()));
+            reload(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), documentService.getDocuments(patient.getId()));
             checkForCurrentDate(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), now);
         });
         uploadDocument.setOnAction(new EventHandler<ActionEvent>() {
@@ -140,22 +150,27 @@ public class OpenPatient {
                 fileChooser.getExtensionFilters().add(extFilter);
                 file = fileChooser.showOpenDialog(parentStage);
                 if (file != null) {
+
                     Optional<? extends PatientVisit> patientVisit = getCurrentPatientVisit(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), LocalDate.now());
                     if (patientVisit.isPresent()) {
-                        List<File> files = patientVisitFileMap.get(patientVisit.get());
-                        if (files == null || files.size() == 0) {
-                            files = new ArrayList<>();
+
+                        try {
+                            documentService.uploadDocument(Integer.parseInt(patient.getId()),
+                                    Integer.parseInt(patientVisit.get().getId()), FileUtils.readFileToByteArray(file),
+                                    FilenameUtils.removeExtension(file.getName()), FilenameUtils.getExtension(file.getName()));
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
-                        files.add(file);
-                        patientVisitFileMap.put(patientVisit.get(), files);
-                        reload(visitPatientsByFirstNameAndLastName);
+                        List<Document> documents = documentService.getDocuments(patient.getId());
+                        reload(patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName()), documents);
                         chooseDocumentChoiceBox.getItems().clear();
-                        List<String> collect = patientVisitFileMap.values().stream()
-                                .flatMap(Collection::stream).map(file1 -> file1.toURI().toString())
-                                .collect(Collectors.toList());
+                        List<String> collect = documents.stream()
+                                .map(Document::getFileName).collect(Collectors.toList());
+
                         chooseDocumentChoiceBox.getItems().addAll(collect);
-                        chooseDocumentChoiceBox.getSelectionModel().select(file.toURI().toString());
-                        loadImageView(chooseDocumentChoiceBox.getSelectionModel().getSelectedItem());
+                        chooseDocumentChoiceBox.getSelectionModel().select(file.getName());
+                        loadImageView(chooseDocumentChoiceBox.getSelectionModel().getSelectedItem(), documents);
                     }
                 }
                 System.out.println(file);
@@ -165,19 +180,25 @@ public class OpenPatient {
 
         chooseDocumentChoiceBox.getSelectionModel().selectedItemProperty().addListener(
                 (ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-                    loadImageView(newValue);
+                    loadImageView(newValue, documentService.getDocuments(patient.getId()));
                 });
 
         close.setOnAction(event -> close(dialog));
 
+        List<Document> documents = documentService.getDocuments(patient.getId());
 
-        List<String> collect = patientVisitFileMap.values().stream()
-                .flatMap(Collection::stream).map(file1 -> file1.toURI().toString())
-                .collect(Collectors.toList());
-        chooseDocumentChoiceBox.getItems().addAll(collect);
-        loadImageView(chooseDocumentChoiceBox.getSelectionModel().getSelectedItem());
+        if (documents != null && documents.size() > 0) {
 
-        reload(visitPatientsByFirstNameAndLastName);
+            List<String> fileNames = documents.stream().map(Document::getFileName).collect(Collectors.toList());
+
+            chooseDocumentChoiceBox.getItems().addAll(fileNames);
+
+            chooseDocumentChoiceBox.getSelectionModel().select(fileNames.get(0));
+
+            loadImageView(chooseDocumentChoiceBox.getSelectionModel().getSelectedItem(), documentService.getDocuments(patient.getId()));
+
+            reload(visitPatientsByFirstNameAndLastName, documents);
+        }
 
         dialog.getDialogPane().contentProperty().setValue(borderPane);
 
@@ -206,11 +227,27 @@ public class OpenPatient {
         dialog.close();
     }
 
-    private void loadImageView(String item) {
+    private void loadImageView(String item, List<Document> documents) {
         if (item != null && !item.isEmpty()) {
-            Image image = new Image(item);
+
+            Map<String, Document> fileNameToDocument = new HashMap<>();
+
+            documents.forEach(document -> {
+                fileNameToDocument.put(document.getFileName(), document);
+            });
+
+            byte[] fileContent = fileNameToDocument.get(item).getFileContent();
+            ByteArrayInputStream bis = new ByteArrayInputStream(fileContent);
+            fileNameToDocument.clear();
+            BufferedImage bImage2 = null;
             ImageView imageView = new ImageView();
-            imageView.setImage(image);
+            try {
+                bImage2 = ImageIO.read(bis);
+                Image image = SwingFXUtils.toFXImage(bImage2, null);
+                imageView.setImage(image);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             imageView.setPreserveRatio(true);
             imageView.setSmooth(true);
             imageView.setCache(true);
@@ -230,22 +267,25 @@ public class OpenPatient {
         }
     }
 
-    private void reload(List<? extends PatientVisit> visitPatientsByFirstNameAndLastName) {
+    private void reload(List<? extends PatientVisit> visitPatientsByFirstNameAndLastName, List<Document> documents) {
         TreeItem<Object> treeItem = new TreeItem();
+        treeView.setShowRoot(false);
         List<TreeItem<Object>> treeItemList = visitPatientsByFirstNameAndLastName.stream().map(patientVisit -> {
             TreeItem<Object> child = new TreeItem<Object>();
-            child.setValue(patientVisit);
-            patientVisitFileMap.entrySet().stream().forEach(patientVisitListEntry -> {
-                if (patientVisit.getPatientVisitDate().compareTo(LocalDate.now()) == 0) {
+            child.setValue(patientVisit.getPatientVisitDate());
+            documents.forEach(document -> {
+                if (patientVisit.getPatientVisitDate().compareTo(LocalDate.now()) == 0 && Integer.parseInt(patientVisit.getId()) == (document.getPatientVisitId())) {
                     TreeItem<Object> childIten = new TreeItem<Object>();
-                    childIten.setValue(patientVisitListEntry.getValue());
+                    childIten.setValue(document.getFileName());
                     child.getChildren().addAll(childIten);
                 }
             });
+            child.setExpanded(true);
             return child;
         }).collect(Collectors.toList());
         treeItem.getChildren().addAll(treeItemList);
         treeView.setRoot(treeItem);
+        treeView.getRoot().setExpanded(true);
     }
 
     private double scaleValue = 0.7;

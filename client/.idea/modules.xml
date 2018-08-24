@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/client.iml" filepath="$PROJECT_DIR$/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/document-service-api/document-service-api.iml" filepath="$PROJECT_DIR$/document-service-api/document-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/document-service-impl/document-service-impl.iml" filepath="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/patient-client-app/patient-client-app.iml" filepath="$PROJECT_DIR$/patient-client-app/patient-client-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" filepath="$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/patient-service-api/patient-service-api.iml" filepath="$PROJECT_DIR$/patient-service-api/patient-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/patient-service-impl/patient-service-impl.iml" filepath="$PROJECT_DIR$/patient-service-impl/patient-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/role-service-api/role-service-api.iml" filepath="$PROJECT_DIR$/role-service-api/role-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/role-service-api.iml" filepath="$PROJECT_DIR$/role-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/role-service-impl/role-service-impl.iml" filepath="$PROJECT_DIR$/role-service-impl/role-service-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service-api/user-service-api.iml" filepath="$PROJECT_DIR$/user-service-api/user-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service-impl/user-service-impl.iml" filepath="$PROJECT_DIR$/user-service-impl/user-service-impl.iml" />
     </modules>
