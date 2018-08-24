@@ -4,57 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" line="208" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3bf15c-8675-4590-9ac8-1704fb7cd16a" name="Default" comment="Role Changes">
-      <change beforePath="" afterPath="$PROJECT_DIR$/role-service-api/role-service-api.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/role-service-impl/role-service-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="6d3bf15c-8675-4590-9ac8-1704fb7cd16a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/Document.java" afterPath="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/Document.java" />
-      <change beforePath="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/DocumentService.java" afterPath="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/DocumentService.java" />
-      <change beforePath="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" afterPath="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/document-service-impl/pom.xml" afterPath="$PROJECT_DIR$/document-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-app/patient-client-app.iml" afterPath="$PROJECT_DIR$/patient-client-app/patient-client-app.iml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-app/pom.xml" afterPath="$PROJECT_DIR$/patient-client-app/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java" afterPath="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" afterPath="$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/pom.xml" afterPath="$PROJECT_DIR$/patient-client-gui/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/GuiStarter.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/GuiStarter.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientVisitClear.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientVisitClear.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientView.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientView.fxml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/create/UserCreate.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/create/UserCreate.fxml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/search/UserSearch.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/search/UserSearch.fxml" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties" />
-      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_en.properties" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_en.properties" />
-      <change beforePath="$PROJECT_DIR$/patient-service-api/patient-service-api.iml" afterPath="$PROJECT_DIR$/patient-service-api/patient-service-api.iml" />
-      <change beforePath="$PROJECT_DIR$/patient-service-api/pom.xml" afterPath="$PROJECT_DIR$/patient-service-api/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/PatientService.java" afterPath="$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/PatientService.java" />
-      <change beforePath="$PROJECT_DIR$/patient-service-impl/pom.xml" afterPath="$PROJECT_DIR$/patient-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" afterPath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/DefaultUserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/UserClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/UserImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../server/patient-catalogue-server.iml" afterPath="$PROJECT_DIR$/../server/patient-catalogue-server.iml" />
-      <change beforePath="$PROJECT_DIR$/../server/pom.xml" afterPath="$PROJECT_DIR$/../server/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/patient/PatientController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/patient/PatientController.java" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/visit/PatientVisitController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/visit/PatientVisitController.java" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientRepositoryDatabase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserRepositoryDatabase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/visit/PatientVisitRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/visit/PatientVisitRepositoryDatabase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/main.iml" afterPath="$PROJECT_DIR$/../server/src/main/main.iml" />
-      <change beforePath="$PROJECT_DIR$/../server/src/test/test.iml" afterPath="$PROJECT_DIR$/../server/src/test/test.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -925,6 +876,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524473503776</updated>
     </task>
+    <task id="LOCAL-00001" summary="Role Changes">
+      <created>1535095673232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535095673232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -970,6 +929,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -980,7 +940,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46921074" sideWeight="0.5175064" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292058" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40069383" sideWeight="0.93296325" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870772" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
