@@ -1,5 +1,8 @@
 package com.zeiss.user.service.impl;
 
+import com.google.inject.Inject;
+import com.zeiss.role.service.api.Role;
+import com.zeiss.role.service.api.RoleService;
 import com.zeiss.user.service.api.User;
 import com.zeiss.user.service.api.UserService;
 import feign.Feign;
@@ -13,6 +16,11 @@ public class DefaultUserService implements UserService {
 
     private UserClient userClient;
 
+    private static final User NOUSER = new NoUser();
+
+    @Inject
+    private RoleService roleService;
+
     public DefaultUserService() {
         userClient = Feign.builder().client(new ApacheHttpClient())
                 .encoder(new JacksonEncoder())
@@ -25,6 +33,11 @@ public class DefaultUserService implements UserService {
     public List<? extends User> getUsers() {
 
         return userClient.getAll();
+    }
+
+    @Override
+    public User getNoUser() {
+        return NOUSER;
     }
 
     public boolean delete(User user) {
@@ -44,12 +57,26 @@ public class DefaultUserService implements UserService {
 
     public List<? extends User> getUsersByUserName(String userName) {
 
-        return userClient.getUsersByUserName(userName);
+        List<UserImpl> usersByUserName = userClient.getUsersByUserName(userName);
+
+        usersByUserName.forEach(user -> {
+            Role role = roleService.getByRoleName(user.getRole());
+            user.setRoleType(role);
+        });
+
+        return usersByUserName;
     }
 
     public List<? extends User> getUsersByUserNameAndPassword(String userName, String password) {
 
-        return userClient.getUsersByUserNameAndPassword(userName, password);
+        List<UserImpl> usersByUserNameAndPassword = userClient.getUsersByUserNameAndPassword(userName, password);
+
+        usersByUserNameAndPassword.forEach(user -> {
+            Role role = roleService.getByRoleName(user.getRole());
+            user.setRoleType(role);
+        });
+
+        return usersByUserNameAndPassword;
     }
 
 

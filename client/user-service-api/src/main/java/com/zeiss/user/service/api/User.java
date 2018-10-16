@@ -1,5 +1,6 @@
 package com.zeiss.user.service.api;
 
+import com.zeiss.role.service.api.Role;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.StringProperty;
 
@@ -16,6 +17,10 @@ public interface User {
 
     void setLastLogin(String lastLogin);
 
+    void setRole(String role);
+
+    void setRoleType(Role roleType);
+
     String getUserName();
 
     StringProperty userNameProperty();
@@ -31,5 +36,13 @@ public interface User {
     LocalDate getLastLogin();
 
     ObjectProperty<LocalDate> lastLoginProperty();
+
+    String getRole();
+
+    StringProperty roleProperty();
+
+    Role getRoleType();
+
+    ObjectProperty<Role> roleTypeProperty();
 
 }

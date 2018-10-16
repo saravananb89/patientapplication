@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -55,6 +55,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.owasp.encoder:encoder:1.2.1" level="project" />
     <orderEntry type="module" module-name="patient-service-api" />
-    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="library" name="Maven: com.gluonhq:charm-down-core:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx-samples:8.20.7" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:9.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:fxsampler:1.0.5" level="project" />
   </component>
 </module>

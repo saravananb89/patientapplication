@@ -39,6 +39,11 @@ public class DefaultPatientService implements PatientService {
         return patientClient.getById(id);
     }
 
+    public PatientVisitImpl getPatientVisitById(String id) {
+
+        return patientVisitClient.getById(id);
+    }
+
     public List<? extends PatientVisit> getPatientVisits(){
         return patientVisitClient.getAll();
     }
@@ -80,6 +85,11 @@ public class DefaultPatientService implements PatientService {
     public List<? extends Patient> getPatientsByLastName(String lastName) {
 
         return patientClient.getPatientsByLastNAme(lastName);
+    }
+
+    public List<? extends Patient> getPatientsByFirstName(String firstName) {
+
+        return patientClient.getPatientsByFirstName(firstName);
     }
 
     public List<? extends PatientVisit> getVisitPatientsByLastName(String lastName) {

@@ -64,6 +64,36 @@
             <artifactId>document-service-api</artifactId>
             <version>2.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>device-service-impl</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>device-service-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>settings-service-impl</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>settings-service-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>plan-service-impl</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeiss</groupId>
+            <artifactId>plan-service-api</artifactId>
+            <version>2.0</version>
+        </dependency>
     </dependencies>
 
 </project>

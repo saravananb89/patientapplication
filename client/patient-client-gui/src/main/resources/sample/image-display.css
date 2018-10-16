@@ -1,0 +1,8 @@
+.button.pressed { -fx-background-color: ghostwhite; }
+
+.button, .toggle-button {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.button.drawline { -fx-background-image: url(down.png); }

@@ -1,7 +1,7 @@
 package com.zeiss.patient.client.gui.generate;
 
 import com.google.inject.Inject;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
+import com.zeiss.settings.service.api.LocaleService;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyStringProperty;
 import javafx.fxml.FXML;

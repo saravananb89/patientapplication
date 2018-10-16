@@ -1,7 +1,9 @@
 package com.zeiss.patient.client.gui.clear;
 
+import com.google.inject.Provider;
 import com.zeiss.patient.client.gui.GuiStarter;
 import com.zeiss.patient.service.api.PatientService;
+import com.zeiss.user.service.api.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -26,6 +28,8 @@ public class PatientClear {
 
     @Inject
     private GuiStarter guiStarter;
+    @Inject
+    private Provider<User> userProvider;
 
     public PatientClear() {
     }

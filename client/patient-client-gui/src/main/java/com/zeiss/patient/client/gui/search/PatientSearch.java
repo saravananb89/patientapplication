@@ -3,7 +3,7 @@ package com.zeiss.patient.client.gui.search;
 import com.google.inject.Inject;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
+import com.zeiss.settings.service.api.LocaleService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;

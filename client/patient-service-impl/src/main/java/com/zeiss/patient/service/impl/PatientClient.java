@@ -25,10 +25,13 @@ public interface PatientClient {
     @Headers("Content-Type: application/json")
     void update(@Param("id") String id, Patient patient);
 
-    @RequestLine("GET /search/{lastName}")
+    @RequestLine("GET /search_lastname/{lastName}")
     List<PatientImpl> getPatientsByLastNAme(@Param("lastName") String lastName);
 
-    @RequestLine("GET /search/{firstName}/{lastName}")
+    @RequestLine("GET /search_firstname/{firstName}")
+    List<PatientImpl> getPatientsByFirstName(@Param("firstName") String lastName);
+
+    @RequestLine("GET /search_both/{firstName}/{lastName}")
     List<PatientImpl> getPatientsByFirstNameAndLastNAme(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
     @RequestLine("DELETE")

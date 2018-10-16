@@ -7,9 +7,9 @@ import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
 import com.zeiss.document.service.api.Document;
+import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
 import com.zeiss.patient.service.api.PatientVisit;
-import com.zeiss.patient.service.impl.PatientImpl;
 import org.owasp.encoder.Encode;
 
 import javax.inject.Inject;
@@ -73,7 +73,7 @@ public class DocumentClient {
     public List<Document> getDocuments(String patientId) {
 
         List<Document> documentList = new ArrayList<>();
-        PatientImpl patient = patientService.getPatientsById(patientId);
+        Patient patient = patientService.getPatientsById(patientId);
 
         List<? extends PatientVisit> patientVisits = patientService.getVisitPatientsByFirstNameAndLastName(patient.getFirstName(), patient.getLastName());
 

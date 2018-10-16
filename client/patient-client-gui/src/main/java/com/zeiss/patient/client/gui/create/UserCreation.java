@@ -1,7 +1,9 @@
 package com.zeiss.patient.client.gui.create;
 
 import com.google.inject.Inject;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
+import com.zeiss.role.service.api.Role;
+import com.zeiss.role.service.api.RoleService;
+import com.zeiss.settings.service.api.LocaleService;
 import com.zeiss.user.service.api.User;
 import com.zeiss.user.service.api.UserService;
 import javafx.beans.binding.BooleanBinding;
@@ -13,8 +15,10 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class UserCreation extends TextFieldValidation {
 
@@ -28,6 +32,11 @@ public class UserCreation extends TextFieldValidation {
     private PasswordField password;
     @FXML
     private ChoiceBox<Locale> preferredLocale;
+    @FXML
+    private ChoiceBox<String> roleChoiceBox;
+
+    @Inject
+    private RoleService roleService;
 
     private VBox vbox;
 
@@ -59,27 +68,37 @@ public class UserCreation extends TextFieldValidation {
         // preferredLocale.valueProperty().set(user.getPreferredLocale());
         preferredLocale.setItems(FXCollections.observableArrayList(Locale.GERMAN, Locale.ENGLISH));
 
+        List<? extends Role> roles = roleService.getRoles();
+
+        roleChoiceBox.setItems(FXCollections.observableArrayList(roles.stream().map(Role::getRoleName).collect(Collectors.toList())));
+
         if (update) {
             userName.setDisable(true);
         } else {
             user.userNameProperty().bind(userName.textProperty());
         }
         user.passwordProperty().bind(password.textProperty());
-      //  user.lastLoginProperty().bind(lastLogin.valueProperty());
+        //  user.lastLoginProperty().bind(lastLogin.valueProperty());
         user.preferredLocaleProperty().bind(preferredLocale.valueProperty());
+
+        user.roleProperty().bind(roleChoiceBox.valueProperty());
 
         BooleanBinding validUserNameBinding = userName.textProperty().isEmpty();
         BooleanBinding validPasswordBinding = password.textProperty().isEmpty();
         BooleanBinding validPreferredLocaleBinding = preferredLocale.valueProperty().isNull();
+
+        BooleanBinding validRoleChoiceBoxBinding = roleChoiceBox.valueProperty().isNull();
         //BooleanBinding validLastloginBinding = lastLogin.valueProperty().isNull();
 
         configureTextFieldBinding(validUserNameBinding, userName, "User Name is required");
         configureTextFieldBinding(validPasswordBinding, password, "Password is required");
-       // configureTextFieldBinding(validLastloginBinding, lastLogin, "Lastlogin is required");
+        // configureTextFieldBinding(validLastloginBinding, lastLogin, "Lastlogin is required");
         configureTextFieldBinding(validPreferredLocaleBinding, preferredLocale, "Preferred Locale is required");
 
+        configureTextFieldBinding(validRoleChoiceBoxBinding, roleChoiceBox, "Role is required");
+
         save.disableProperty().bind(validUserNameBinding.or(validPasswordBinding).
-                or(validPreferredLocaleBinding));
+                or(validPreferredLocaleBinding).or(validRoleChoiceBoxBinding));
 
         save.setOnAction(event -> saveAction(userService, user, dialog, runnable));
         cancel.setOnAction(event -> close(dialog, runnable));

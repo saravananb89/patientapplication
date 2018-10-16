@@ -19,7 +19,7 @@
       <StackPane>
       <TabPane fx:id="tabPane">
          <tabs>
-            <Tab id="patientsTab" text="%tabpane.tab.patient.label">
+            <Tab fx:id="patientTab" text="%tabpane.tab.patient.label">
                <content>
                   <BorderPane prefHeight="400.0" prefWidth="640.0">
                      <center>
@@ -56,7 +56,7 @@
                   </BorderPane>
                </content>
             </Tab>
-            <Tab id="VisitsTab" text="%tabpane.tab.visit.label">
+            <Tab fx:id="visitTab" text="%tabpane.tab.visit.label">
                <content>
                   <BorderPane prefHeight="200.0" prefWidth="200.0">
                      <center>
@@ -87,15 +87,16 @@
                   </BorderPane>
                </content>
             </Tab>
-               <Tab id="VisitsTab" text="%tabpane.tab.role.label">
+               <Tab fx:id="userTab" text="%tabpane.tab.user.label">
                   <content>
                      <BorderPane prefHeight="200.0" prefWidth="200.0">
                         <center>
                            <TableView fx:id="userTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                               <columns>
-                                 <TableColumn fx:id="userName" prefWidth="116.0" text="%role.tableview.tablecolumn.username.label" />
-                                 <TableColumn fx:id="preferredLocale" prefWidth="109.0" text="%role.tableview.tablecolumn.preferredlocale.label" />
-                                 <TableColumn fx:id="lastLogin" minWidth="0.0" prefWidth="119.0" text="%role.tableview.tablecolumn.lastlogin.label" />
+                                 <TableColumn fx:id="userName" prefWidth="116.0" text="%user.tableview.tablecolumn.username.label" />
+                                 <TableColumn fx:id="preferredLocale" prefWidth="109.0" text="%user.tableview.tablecolumn.preferredlocale.label" />
+                                 <TableColumn fx:id="lastLogin" minWidth="0.0" prefWidth="119.0" text="%user.tableview.tablecolumn.lastlogin.label" />
+                                 <TableColumn fx:id="role" minWidth="0.0" prefWidth="119.0" text="%user.create.role.label" />
                               </columns>
                               <columnResizePolicy>
                                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -105,10 +106,76 @@
                         <bottom>
                            <HBox prefWidth="200.0" spacing="15.0" style="-fx-background-color: #ff444444;" BorderPane.alignment="CENTER">
                               <children>
-                                 <Button fx:id="createUser" mnemonicParsing="false" text="%patient.search.dialog.create.button.label" />
-                                 <Button fx:id="deleteUser" mnemonicParsing="false" text="%patient.search.dialog.delete.visit.button.label" />
-                                 <Button fx:id="updateUser" mnemonicParsing="false" text="%patient.search.dialog.update.visit.button.label" />
-                                 <Button fx:id="searchUser" mnemonicParsing="false" text="%patient.search.dialog.search.visit.button.label" />
+                                 <Button fx:id="createUser" mnemonicParsing="false" text="%user.dialog.search.visit.button.label" />
+                                 <Button fx:id="deleteUser" mnemonicParsing="false" text="%user.dialog.create.visit.button.label" />
+                                 <Button fx:id="updateUser" mnemonicParsing="false" text="%user.dialog.delete.visit.button.label" />
+                                 <Button fx:id="searchUser" mnemonicParsing="false" text="%user.dialog.update.visit.button.label" />
+                              </children>
+                              <padding>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </padding>
+                           </HBox>
+                        </bottom>
+                     </BorderPane>
+                  </content>
+               </Tab>
+               <Tab fx:id="roleTab" text="%tabpane.tab.role.label">
+                  <content>
+                     <BorderPane prefHeight="200.0" prefWidth="200.0">
+                        <center>
+                           <TableView fx:id="roleTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                              <columns>
+                                 <TableColumn fx:id="roleName" prefWidth="116.0" text="%role.tableview.tablecolumn.rolename.label" />
+                                 <TableColumn fx:id="patientAccess" prefWidth="109.0" text="%role.tableview.tablecolumn.patienttabaccess.label" />
+                                 <TableColumn fx:id="visitAccess" minWidth="0.0" prefWidth="119.0" text="%role.tableview.tablecolumn.visittabaccess.label" />
+                                 <TableColumn fx:id="userAccess" minWidth="0.0" prefWidth="119.0" text="%role.tableview.tablecolumn.usertabaccess.label" />
+                                 <TableColumn fx:id="roleAccess" minWidth="0.0" prefWidth="119.0" text="%role.tableview.tablecolumn.roletabaccess.label" />
+                                 <TableColumn fx:id="deviceAccess" minWidth="0.0" prefWidth="119.0" text="%role.label.devicetabaccess.label" />
+                              </columns>
+                              <columnResizePolicy>
+                                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                              </columnResizePolicy>
+                           </TableView>
+                        </center>
+                        <bottom>
+                           <HBox prefWidth="200.0" spacing="15.0" style="-fx-background-color: #ff444444;" BorderPane.alignment="CENTER">
+                              <children>
+                                 <Button fx:id="createRole" mnemonicParsing="false" text="%role.search.dialog.create.button.label" />
+                                 <Button fx:id="deleteRole" mnemonicParsing="false" text="%role.search.dialog.delete.button.label" />
+                                 <Button fx:id="updateRole" mnemonicParsing="false" text="%role.search.dialog.update.button.label" />
+                                 <Button fx:id="searchRole" mnemonicParsing="false" text="%role.search.dialog.search.button.label" />
+                              </children>
+                              <padding>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </padding>
+                           </HBox>
+                        </bottom>
+                     </BorderPane>
+                  </content>
+               </Tab>
+               <Tab fx:id="deviceTab" text="%tabpane.tab.device.label">
+                  <content>
+                     <BorderPane prefHeight="200.0" prefWidth="200.0">
+                        <center>
+                           <TableView fx:id="deviceTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                              <columns>
+                                 <TableColumn fx:id="deviceName" prefWidth="116.0" text="%device.tableview.tablecolumn.devicename.label" />
+                                 <TableColumn fx:id="host" prefWidth="109.0" text="%device.tableview.tablecolumn.host.label" />
+                                 <TableColumn fx:id="port" minWidth="0.0" prefWidth="119.0" text="%device.tableview.tablecolumn.port.label" />
+                              </columns>
+                              <columnResizePolicy>
+                                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                              </columnResizePolicy>
+                           </TableView>
+                        </center>
+                        <bottom>
+                           <HBox prefWidth="200.0" spacing="15.0" style="-fx-background-color: #ff444444;" BorderPane.alignment="CENTER">
+                              <children>
+                                 <Button fx:id="createDevice" mnemonicParsing="false" text="%device.dialog.create.button.label" />
+                                 <Button fx:id="deleteDevice" mnemonicParsing="false" text="%device.dialog.delete.button.label" />
+                                 <Button fx:id="updateDevice" mnemonicParsing="false" text="%device.dialog.update.button.label" />
+                                 <Button fx:id="searchDevice" mnemonicParsing="false" text="%device.dialog.search.button.label" />
+                                 <Button fx:id="plan" layoutX="466.0" layoutY="20.0" mnemonicParsing="false" text="%device.dialog.plan.button.label" />
                               </children>
                               <padding>
                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

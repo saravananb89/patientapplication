@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <JFXTimePicker fx:id="jfxTimePicker" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXTimePicker>
+   </center>
+   <bottom>
+      <HBox alignment="TOP_RIGHT" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Button fx:id="save" mnemonicParsing="false" text="%visit.button.save.label" />
+            <Button fx:id="cancel" mnemonicParsing="false" text="%visit.button.cancel.label" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label fx:id="errorMessage" BorderPane.alignment="TOP_LEFT">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+   </top>
+</BorderPane>

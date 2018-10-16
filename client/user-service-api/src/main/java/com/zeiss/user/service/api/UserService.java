@@ -16,4 +16,6 @@ public interface UserService {
     List<? extends User> getUsersByUserNameAndPassword(String userName, String password);
 
     void clear();
+
+    User getNoUser();
 }

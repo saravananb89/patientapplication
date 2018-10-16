@@ -13,7 +13,7 @@
    <top>
       <HBox prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="lastNameLabel" text="%role.tableview.tablecolumn.username.label" />
+            <Label fx:id="lastNameLabel" text="%user.tableview.tablecolumn.username.label" />
             <TextField id="lastNameText" fx:id="userNameTextField" />
             <Button id="search" fx:id="search" mnemonicParsing="false" text="Search" />
          </children>
@@ -35,9 +35,10 @@
    <center>
       <TableView id="tableView" fx:id="tableView" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn id="userName" fx:id="userName" prefWidth="75.0" text="%role.tableview.tablecolumn.username.label" />
-          <TableColumn id="preferredLocale" fx:id="preferredLocale" prefWidth="75.0" text="%role.tableview.tablecolumn.preferredlocale.label" />
-            <TableColumn fx:id="lastLogin" prefWidth="75.0" text="%role.tableview.tablecolumn.lastlogin.label" />
+          <TableColumn id="userName" fx:id="userName" prefWidth="75.0" text="%user.tableview.tablecolumn.username.label" />
+          <TableColumn id="preferredLocale" fx:id="preferredLocale" prefWidth="75.0" text="%user.tableview.tablecolumn.preferredlocale.label" />
+            <TableColumn fx:id="lastLogin" prefWidth="75.0" text="%user.tableview.tablecolumn.lastlogin.label" />
+            <TableColumn fx:id="role" prefWidth="75.0" text="%user.create.role.label" />
         </columns>
       </TableView>
    </center>

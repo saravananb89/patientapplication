@@ -1,9 +1,13 @@
 package com.zeiss.patient.client.gui;
 
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
+import com.google.inject.Provider;
+import com.zeiss.device.service.api.Device;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
 import com.zeiss.patient.service.api.PatientVisit;
+import com.zeiss.role.service.api.Role;
+import com.zeiss.role.service.api.RoleService;
+import com.zeiss.settings.service.api.LocaleService;
 import com.zeiss.user.service.api.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,6 +53,17 @@ public class PatientView {
     @FXML
     private TabPane tabPane;
     @FXML
+    private Tab patientTab;
+    @FXML
+    private Tab visitTab;
+    @FXML
+    private Tab userTab;
+    @FXML
+    private Tab roleTab;
+    @FXML
+    private Tab deviceTab;
+
+    @FXML
     private MenuItem exit;
     @FXML
     private MenuItem showPatients;
@@ -77,15 +92,44 @@ public class PatientView {
     @FXML
     private Button createUser;
 
+    @FXML
+    private TableView<Role> roleTableView;
+    @FXML
+    private Button updateRole;
+    @FXML
+    private Button deleteRole;
+    @FXML
+    private Button searchRole;
+    @FXML
+    private Button createRole;
+
+    @FXML
+    private TableView<Device> deviceTableView;
+    @FXML
+    private Button updateDevice;
+    @FXML
+    private Button deleteDevice;
+    @FXML
+    private Button searchDevice;
+    @FXML
+    private Button createDevice;
+    @FXML
+    private Button plan;
+
+
     @Inject
     private LocaleService localeService;
 
     @Inject
     private PatientService patientService;
     @Inject
+    private RoleService roleService;
+    @Inject
     private PatientPresenter patientPresenter;
     @Inject
     private GuiStarter guiStarter;
+    @Inject
+    private Provider<User> userProvider;
 
     private BorderPane root;
 
@@ -124,6 +168,22 @@ public class PatientView {
                 patientPresenter.selectUser(newValue);
             }
         });
+
+        roleTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue == null) {
+                patientPresenter.clearRoleSelection();
+            } else {
+                patientPresenter.selectRole(newValue);
+            }
+        });
+
+        deviceTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue == null) {
+                patientPresenter.clearDeviceSelection();
+            } else {
+                patientPresenter.selectDevice(newValue);
+            }
+        });
     }
 
     public void opaqueDisable(boolean opaqueVisible) {
@@ -134,6 +194,7 @@ public class PatientView {
     public Parent patientShow() {
         return root;
     }
+
 
     private Region opaqueLayer = new Region();
 
@@ -164,6 +225,17 @@ public class PatientView {
         updateUser.setOnAction(event -> openDialog(patientPresenter::updateUserAction));
         searchUser.setOnAction(event -> openDialog(patientPresenter::searchUserAction));
 
+        createRole.setOnAction(event -> openDialog(patientPresenter::createRoleAction));
+        deleteRole.setOnAction(event -> patientPresenter.deleteRoleAction());
+        updateRole.setOnAction(event -> openDialog(patientPresenter::updateRoleAction));
+        searchRole.setOnAction(event -> openDialog(patientPresenter::searchRoleAction));
+
+        createDevice.setOnAction(event -> openDialog(patientPresenter::createDeviceAction));
+        deleteDevice.setOnAction(event -> patientPresenter.deleteDeviceAction());
+        updateDevice.setOnAction(event -> openDialog(patientPresenter::updateDeviceAction));
+        searchDevice.setOnAction(event -> openDialog(patientPresenter::searchDeviceAction));
+        plan.setOnAction(event -> openDialog(patientPresenter::planeAction));
+
         tableView.getColumns().stream().map(patientTableColumn -> (TableColumn<Patient, String>) patientTableColumn).
                 forEach(patientTableColumn -> patientTableColumn.setCellValueFactory(new PropertyValueFactory<Patient, String>(patientTableColumn.getId())));
 
@@ -174,6 +246,18 @@ public class PatientView {
         userTableView.getColumns().stream().map(patientTableColumn -> (TableColumn<User, String>) patientTableColumn).
                 forEach(patientTableColumn -> patientTableColumn.setCellValueFactory(new PropertyValueFactory<User,
                         String>(patientTableColumn.getId())));
+
+        roleTableView.getColumns().stream().map(roleTableColumn -> (TableColumn<Role, String>) roleTableColumn).
+                forEach(roleTableColumn -> {
+                    roleTableColumn.setCellValueFactory(new PropertyValueFactory<Role, String>
+                            (roleTableColumn.getId()));
+                });
+
+        deviceTableView.getColumns().stream().map(roleTableColumn -> (TableColumn<Device, String>) roleTableColumn).
+                forEach(roleTableColumn -> {
+                    roleTableColumn.setCellValueFactory(new PropertyValueFactory<Device, String>
+                            (roleTableColumn.getId()));
+                });
 
         exit.setOnAction(event -> System.exit(0));
 
@@ -200,6 +284,11 @@ public class PatientView {
         openPatient.setOnAction(event -> patientPresenter.openPatient());
 
         logout.setOnAction(event -> guiStarter.loadLoginDialog(getStage()));
+
+    }
+
+    private void removeTab(Tab tab) {
+        tabPane.getTabs().remove(tab);
     }
 
     private void openDialog(Runnable run) {
@@ -227,15 +316,56 @@ public class PatientView {
 
     public void bindToModel(PatientModel patientModel) {
         tableView.itemsProperty().bind(patientModel.patientsProperty());
-        visitTableView.itemsProperty().bind(patientModel.visitPatientsProperty());
-        userTableView.itemsProperty().bind(patientModel.usersProperty());
-        deleteButton.disableProperty().bind(patientModel.deletionImPossibleProperty());
-        update.disableProperty().bind(patientModel.updateImPossibleProperty());
-        deleteVisits.disableProperty().bind(patientModel.deletionVisitImPossibleProperty());
-        updateVisits.disableProperty().bind(patientModel.updateVisitImPossibleProperty());
+        deleteButton.disableProperty().bind(patientModel.deletionImPossibleProperty().or(patientModel.hasPatientWriteAccessProperty().not()));
+        update.disableProperty().bind(patientModel.updateImPossibleProperty().or(patientModel.hasPatientWriteAccessProperty().not()));
         openPatient.disableProperty().bind(patientModel.openPatientImPossibleProperty());
-        deleteUser.disableProperty().bind(patientModel.deletionUserImPossibleProperty());
-        updateUser.disableProperty().bind(patientModel.updateUserImPossibleProperty());
+        create.disableProperty().bind(patientModel.hasPatientWriteAccessProperty().not());
+
+        visitTableView.itemsProperty().bind(patientModel.visitPatientsProperty());
+        deleteVisits.disableProperty().bind(patientModel.deletionVisitImPossibleProperty().or(patientModel.hasVisitWriteAccessProperty().not()));
+        updateVisits.disableProperty().bind(patientModel.updateVisitImPossibleProperty().or(patientModel.hasVisitWriteAccessProperty().not()));
+        createVisits.disableProperty().bind(patientModel.hasVisitWriteAccessProperty().not());
+
+        userTableView.itemsProperty().bind(patientModel.usersProperty());
+        deleteUser.disableProperty().bind(patientModel.deletionUserImPossibleProperty().or(patientModel.hasUserWriteAccessProperty().not()));
+        patientModel.updateUserImPossibleProperty().addListener((observable, oldValue, newValue) -> {
+            System.out.println(oldValue + "" + newValue + "" + patientModel.isHasUserWriteAccess());
+        });
+
+        deleteUser.disableProperty().addListener((observable, oldValue, newValue) -> {
+            System.out.println(oldValue + "" + newValue + "" + patientModel.isHasUserWriteAccess());
+        });
+
+        updateUser.disableProperty().bind(patientModel.updateUserImPossibleProperty().or(patientModel.hasUserWriteAccessProperty().not()));
+        createUser.disableProperty().bind(patientModel.hasUserWriteAccessProperty().not());
+
+        roleTableView.itemsProperty().bind(patientModel.rolesProperty());
+        deleteRole.disableProperty().bind(patientModel.deletionRoleImPossibleProperty().or(patientModel.hasRoleWriteAccessProperty().not()));
+        updateRole.disableProperty().bind(patientModel.updateRoleImPossibleProperty().or(patientModel.hasRoleWriteAccessProperty().not()));
+        createRole.disableProperty().bind(patientModel.hasRoleWriteAccessProperty().not());
+
+        deviceTableView.itemsProperty().bind(patientModel.devicesProperty());
+        deleteDevice.disableProperty().bind(patientModel.deletionDeviceImPossibleProperty().or(patientModel.hasRoleWriteAccessProperty().not()));
+        updateDevice.disableProperty().bind(patientModel.updateDeviceImPossibleProperty().or(patientModel.hasRoleWriteAccessProperty().not()));
+        createDevice.disableProperty().bind(patientModel.hasRoleWriteAccessProperty().not());
+        plan.disableProperty().bind(patientModel.planImPossibleProperty());
+
+        if (!patientModel.isHasPatientReadAccess()) {
+            tabPane.getTabs().remove(patientTab);
+        }
+
+        if (!patientModel.isHasVisitReadAccess()) {
+            tabPane.getTabs().remove(visitTab);
+        }
+        if (!patientModel.isHasUserReadAccess()) {
+            tabPane.getTabs().remove(userTab);
+        }
+        if (!patientModel.isHasRoleReadAccess()) {
+            tabPane.getTabs().remove(roleTab);
+        }
+        if (!patientModel.isHasDeviceReadAccess()) {
+            tabPane.getTabs().remove(deviceTab);
+        }
     }
 
     public Stage getStage() {

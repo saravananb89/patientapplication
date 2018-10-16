@@ -23,7 +23,15 @@
         <module>document-service-impl</module>
         <module>role-service-api</module>
 		<module>role-service-impl</module>
+		<module>settings-service-api</module>
+        <module>settings-service-impl</module>
+		<module>device-service-api</module>
+		<module>device-service-impl</module>
+        <module>plan-service-api</module>
+        <module>plan-service-impl</module>
     </modules>
 
 
 </project>
+
+

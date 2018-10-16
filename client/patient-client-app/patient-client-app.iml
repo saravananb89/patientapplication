@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" externalSystem="Maven" />
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -9,8 +10,71 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="module" module-name="patient-service-api" />
+    <orderEntry type="module" module-name="role-service-impl" />
+    <orderEntry type="module" module-name="role-service-api" />
+    <orderEntry type="module" module-name="user-service-impl" />
+    <orderEntry type="module" module-name="user-service-api" />
+    <orderEntry type="module" module-name="document-service-impl" />
+    <orderEntry type="module" module-name="document-service-api" />
+    <orderEntry type="module" module-name="device-service-impl" />
+    <orderEntry type="module" module-name="device-service-api" />
+    <orderEntry type="module" module-name="settings-service-impl" />
+    <orderEntry type="module" module-name="settings-service-api" />
+    <orderEntry type="module" module-name="plan-service-impl" />
+    <orderEntry type="module" module-name="plan-service-api" />
+    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="module" module-name="patient-service-api" />
+    <orderEntry type="module" module-name="role-service-impl" />
+    <orderEntry type="module" module-name="role-service-api" />
+    <orderEntry type="module" module-name="user-service-impl" />
+    <orderEntry type="module" module-name="user-service-api" />
+    <orderEntry type="module" module-name="document-service-impl" />
+    <orderEntry type="module" module-name="document-service-api" />
+    <orderEntry type="module" module-name="device-service-impl" />
+    <orderEntry type="module" module-name="device-service-api" />
+    <orderEntry type="module" module-name="settings-service-impl" />
+    <orderEntry type="module" module-name="settings-service-api" />
+    <orderEntry type="module" module-name="plan-service-impl" />
+    <orderEntry type="module" module-name="plan-service-api" />
+    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="module" module-name="patient-service-api" />
+    <orderEntry type="module" module-name="role-service-impl" />
+    <orderEntry type="module" module-name="role-service-api" />
+    <orderEntry type="module" module-name="user-service-impl" />
+    <orderEntry type="module" module-name="user-service-api" />
+    <orderEntry type="module" module-name="document-service-impl" />
+    <orderEntry type="module" module-name="document-service-api" />
+    <orderEntry type="module" module-name="device-service-impl" />
+    <orderEntry type="module" module-name="device-service-api" />
+    <orderEntry type="module" module-name="settings-service-impl" />
+    <orderEntry type="module" module-name="settings-service-api" />
+    <orderEntry type="module" module-name="plan-service-impl" />
+    <orderEntry type="module" module-name="plan-service-api" />
+    <orderEntry type="module" module-name="patient-service-impl" />
+    <orderEntry type="module" module-name="patient-service-api" />
+    <orderEntry type="module" module-name="role-service-impl" />
+    <orderEntry type="module" module-name="role-service-api" />
+    <orderEntry type="module" module-name="user-service-impl" />
+    <orderEntry type="module" module-name="user-service-api" />
+    <orderEntry type="module" module-name="document-service-impl" />
+    <orderEntry type="module" module-name="document-service-api" />
+    <orderEntry type="module" module-name="device-service-impl" />
+    <orderEntry type="module" module-name="device-service-api" />
+    <orderEntry type="module" module-name="settings-service-impl" />
+    <orderEntry type="module" module-name="settings-service-api" />
+    <orderEntry type="module" module-name="plan-service-impl" />
+    <orderEntry type="module" module-name="plan-service-api" />
     <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:8.0.1" level="project" />
     <orderEntry type="module" module-name="patient-client-gui" />
+    <orderEntry type="library" name="Maven: org.fxmisc.richtext:richtextfx:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.reactfx:reactfx:2.0-M5" level="project" />
+    <orderEntry type="library" name="Maven: org.fxmisc.undo:undofx:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.fxmisc.flowless:flowless:0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.fxmisc.wellbehaved:wellbehavedfx:0.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20180813" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject:guice:4.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
@@ -21,6 +85,8 @@
     <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.jfoenix:jfoenix:8.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.6" level="project" />
     <orderEntry type="module" module-name="patient-service-impl" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:9.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet:animal-sniffer-annotation:1.0" level="project" />
@@ -67,6 +133,20 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.owasp.encoder:encoder:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.gluonhq:charm-down-core:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx-samples:8.20.7" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:fxsampler:1.0.5" level="project" />
     <orderEntry type="module" module-name="document-service-api" />
+    <orderEntry type="module" module-name="device-service-impl" />
+    <orderEntry type="module" module-name="device-service-api" />
+    <orderEntry type="module" module-name="settings-service-impl" />
+    <orderEntry type="module" module-name="settings-service-api" />
+    <orderEntry type="module" module-name="plan-service-impl" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.5.RELEASE" level="project" />
+    <orderEntry type="module" module-name="plan-service-api" />
   </component>
 </module>

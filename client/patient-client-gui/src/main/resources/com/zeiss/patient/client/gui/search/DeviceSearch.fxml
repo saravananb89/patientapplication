@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane id="borderPane" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <HBox prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="deviceNameLabel" text="%device.tableview.tablecolumn.devicename.label"/>
+                <TextField id="lastNameText" fx:id="deviceNameText"/>
+                <Button id="search" fx:id="search" mnemonicParsing="false" text="Search"/>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox prefWidth="200.0" style="-fx-background-color: #ff444444;" BorderPane.alignment="CENTER">
+            <children>
+                <Button id="close" fx:id="close" mnemonicParsing="false" text="%patient.search.button.label"/>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <TableView id="tableView" fx:id="tableView" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="deviceName" prefWidth="75.0" text="%device.tableview.tablecolumn.devicename.label"/>
+                <TableColumn fx:id="host" prefWidth="75.0" text="%device.tableview.tablecolumn.host.label"/>
+                <TableColumn fx:id="port" prefWidth="75.0" text="%device.tableview.tablecolumn.port.label"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

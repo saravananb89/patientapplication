@@ -1,12 +1,15 @@
 package com.zeiss.role.service.impl;
 
+import com.zeiss.role.service.api.Access;
 import com.zeiss.role.service.api.Role;
+import com.zeiss.role.service.api.RoleDTO;
 import com.zeiss.role.service.api.RoleService;
 import feign.Feign;
 import feign.httpclient.ApacheHttpClient;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DefaultRoleService implements RoleService {
@@ -24,7 +27,16 @@ public class DefaultRoleService implements RoleService {
 
     public List<? extends Role> getRoles() {
 
-        return roleClient.getAll();
+        List<RoleDTO> roleDTOS = roleClient.getAll();
+
+        List<Role> roles = new ArrayList<>();
+
+        roleDTOS.forEach(roleDTO -> {
+            Role role = new RoleImpl(roleDTO.getRoleName(), Access.getAccess(roleDTO.getPatientAccess()), Access.getAccess(roleDTO.getVisitAccess())
+                    , Access.getAccess(roleDTO.getUserAccess()), Access.getAccess(roleDTO.getRoleAccess()), Access.getAccess(roleDTO.getDeviceAccess()));
+            roles.add(role);
+        });
+        return roles;
     }
 
     public boolean delete(Role role) {
@@ -34,16 +46,23 @@ public class DefaultRoleService implements RoleService {
 
     public void create(Role role) {
         System.out.println("role is created " + role);
-        roleClient.create(role);
+        RoleDTO roleDTO = new RoleDTO(role.getRoleName(), role.getPatientAccess().getRepresentation(), role.getVisitAccess().getRepresentation(),
+                role.getUserAccess().getRepresentation(), role.getRoleAccess().getRepresentation(), role.getDeviceAccess().getRepresentation());
+        roleClient.create(roleDTO);
     }
 
     public void update(Role role) {
         System.out.println("role is updated " + role);
-        roleClient.update(role.getRoleName(), role);
+        RoleDTO roleDTO = new RoleDTO(role.getRoleName(), role.getPatientAccess().getRepresentation(), role.getVisitAccess().getRepresentation(),
+                role.getUserAccess().getRepresentation(), role.getRoleAccess().getRepresentation(), role.getDeviceAccess().getRepresentation());
+        roleClient.update(role.getRoleName(), roleDTO);
     }
 
     public Role getByRoleName(String roleName) {
-        return roleClient.getByRoleName(roleName);
+        RoleDTO roleDTO = roleClient.getByRoleName(roleName);
+        Role role = new RoleImpl(roleDTO.getRoleName(), Access.getAccess(roleDTO.getPatientAccess()), Access.getAccess(roleDTO.getVisitAccess())
+                , Access.getAccess(roleDTO.getUserAccess()), Access.getAccess(roleDTO.getRoleAccess()), Access.getAccess(roleDTO.getDeviceAccess()));
+        return role;
     }
 
     @Override

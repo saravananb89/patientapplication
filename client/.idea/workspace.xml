@@ -1,11 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" line="208" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" line="211" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3bf15c-8675-4590-9ac8-1704fb7cd16a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_charm_down_core_3_8_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jfoenix_jfoenix_8_0_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_9_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_samples_8_20_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_fxsampler_1_0_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fxmisc_flowless_flowless_0_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fxmisc_richtext_richtextfx_0_9_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fxmisc_undo_undofx_2_1_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fxmisc_wellbehaved_wellbehavedfx_0_3_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactfx_reactfx_2_0_M5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/device-service-impl/device-service-impl.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewScrollExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/SliderWithLabeledThumb.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/RoleCreation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/delete/DeviceDeletion.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/delete/PlanDeletion.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/delete/RoleDeletion.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Anchor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Arrow.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/BoundLine.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Delta.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/DragContext.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JSONWriteExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFXDrawOnCanvas.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFX_DrawOnCanvas.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineCurve.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineManipulator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineMeasurement.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineWithArrow.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OnScrollEvent.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PanAndZoomPane.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/ParStyle.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SceneGestures.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SplineCurve.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/TextStyle.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/ChangeType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/ConcatBindings.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Messages.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PatientTextFlow.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PersistUnsavedPlanChanges.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitTimePicker.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitWrapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/TransientModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/DeviceSearch.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/update/DeviceUpdate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/update/PlanUpdate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/update/RoleUpdate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientDiagone.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PlanningUnitTimePicker.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/UnSavedChanges.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/UploadDocument.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/create/DeviceCreate.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/Retina.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-center.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-justify.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-left.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-right.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/bold.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/cut.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/down.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/image-display.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/insertimage.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/italic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/loadfile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/paste.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/redo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/rich-text.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/savefile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/strikethrough.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/underline.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/undo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plan-service-api/plan-service-api.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plan-service-api/src/main/java/com/zeiss/plan/service/api/Planning.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plan-service-api/src/main/java/com/zeiss/plan/service/api/PlanningUnit.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plan-service-impl/plan-service-impl.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plan-service-impl/src/main/java/com/zeiss/plan/service/impl/PlanningImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/RoleDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/settings-service-api/settings-service-api.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/settings-service-impl/settings-service-impl.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/settings-service-impl/src/main/java/com/zeiss/settings/service/impl/LocaleServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-service-impl/src/main/java/com/zeiss/user/service/impl/NoUser.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/client.iml" afterPath="$PROJECT_DIR$/device-service-api/device-service-api.iml" />
+      <change beforePath="$PROJECT_DIR$/document-service-api/document-service-api.iml" afterPath="$PROJECT_DIR$/document-service-api/document-service-api.iml" />
+      <change beforePath="$PROJECT_DIR$/document-service-api/pom.xml" afterPath="$PROJECT_DIR$/document-service-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" afterPath="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/document-service-impl/pom.xml" afterPath="$PROJECT_DIR$/document-service-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DocumentClient.java" afterPath="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DocumentClient.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-app/patient-client-app.iml" afterPath="$PROJECT_DIR$/patient-client-app/patient-client-app.iml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-app/pom.xml" afterPath="$PROJECT_DIR$/patient-client-app/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java" afterPath="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" afterPath="$PROJECT_DIR$/patient-client-gui/patient-client-gui.iml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/pom.xml" afterPath="$PROJECT_DIR$/patient-client-gui/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/GuiStarter.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/GuiStarter.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientClear.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientClear.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientVisitClear.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientVisitClear.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/PatientCreation.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/PatientCreation.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/UserCreation.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/UserCreation.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/PatientGeneratedProgressBar.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/PatientGeneratedProgressBar.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/localeservice/LocaleService.java" afterPath="$PROJECT_DIR$/settings-service-api/src/main/java/com/zeiss/settings/service/api/LocaleService.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/PatientSearch.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/PatientSearch.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/PatientVisitSearch.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/PatientVisitSearch.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/UserSearch.java" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/UserSearch.java" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/OpenPatient.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/OpenPatient.fxml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientView.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientView.fxml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/create/UserCreate.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/create/UserCreate.fxml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/search/UserSearch.fxml" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/search/UserSearch.fxml" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties" />
+      <change beforePath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_en.properties" afterPath="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_en.properties" />
+      <change beforePath="$PROJECT_DIR$/patient-service-api/patient-service-api.iml" afterPath="$PROJECT_DIR$/patient-service-api/patient-service-api.iml" />
+      <change beforePath="$PROJECT_DIR$/patient-service-api/pom.xml" afterPath="$PROJECT_DIR$/patient-service-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/PatientService.java" afterPath="$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/PatientService.java" />
+      <change beforePath="$PROJECT_DIR$/patient-service-impl/patient-service-impl.iml" afterPath="$PROJECT_DIR$/patient-service-impl/patient-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" afterPath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" />
+      <change beforePath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientClient.java" afterPath="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientClient.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/role-service-api/role-service-api.iml" afterPath="$PROJECT_DIR$/role-service-api/role-service-api.iml" />
+      <change beforePath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java" afterPath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java" />
+      <change beforePath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Role.java" afterPath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Role.java" />
+      <change beforePath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/RoleService.java" afterPath="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/RoleService.java" />
+      <change beforePath="$PROJECT_DIR$/role-service-impl/role-service-impl.iml" afterPath="$PROJECT_DIR$/role-service-impl/role-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/DefaultRoleService.java" afterPath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/DefaultRoleService.java" />
+      <change beforePath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleClient.java" afterPath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleClient.java" />
+      <change beforePath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleImpl.java" afterPath="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleImpl.java" />
+      <change beforePath="$PROJECT_DIR$/user-service-api/pom.xml" afterPath="$PROJECT_DIR$/user-service-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/User.java" afterPath="$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/User.java" />
+      <change beforePath="$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/UserService.java" afterPath="$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/user-service-api/user-service-api.iml" afterPath="$PROJECT_DIR$/user-service-api/user-service-api.iml" />
+      <change beforePath="$PROJECT_DIR$/user-service-impl/pom.xml" afterPath="$PROJECT_DIR$/user-service-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/user-service-impl/src/main/java/com/zeiss/user/service/impl/DefaultUserService.java" afterPath="$PROJECT_DIR$/user-service-impl/src/main/java/com/zeiss/user/service/impl/DefaultUserService.java" />
+      <change beforePath="$PROJECT_DIR$/user-service-impl/src/main/java/com/zeiss/user/service/impl/UserImpl.java" afterPath="$PROJECT_DIR$/user-service-impl/src/main/java/com/zeiss/user/service/impl/UserImpl.java" />
+      <change beforePath="$PROJECT_DIR$/user-service-impl/user-service-impl.iml" afterPath="$PROJECT_DIR$/user-service-impl/user-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../server/pom.xml" afterPath="$PROJECT_DIR$/../server/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/Role/RoleDTO.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/Role/RoleDTO.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/document/DocumentDTORepository.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/document/DocumentDTORepository.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/patient/PatientDTO.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/patient/PatientDTO.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/patient/PatientDTORepository.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/patient/PatientDTORepository.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/user/UserDTO.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/data/user/UserDTO.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/patient/PatientController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/patient/PatientController.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/role/RoleController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/role/RoleController.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/Role.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/Role.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/RoleService.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/RoleService.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/RoleServiceDatabase.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/Role/RoleServiceDatabase.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientService.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientService.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientServiceDatabase.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/patient/PatientServiceDatabase.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/User.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/User.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserService.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserServiceDatabase.java" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/service/user/UserServiceDatabase.java" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/main.iml" afterPath="$PROJECT_DIR$/../server/src/main/main.iml" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/../server/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,6 +189,12 @@
     <ignored path="$PROJECT_DIR$/document-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/role-service-api/target/" />
     <ignored path="$PROJECT_DIR$/role-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/settings-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/settings-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/device-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/device-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/plan-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/plan-service-impl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,120 +205,111 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DefaultRoleService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/DefaultRoleService.java">
+      <file leaf-file-name="PatientClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-              <folding>
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="73" column="15" lean-forward="false" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PatientVisitController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/visit/PatientVisitController.java">
+      <file leaf-file-name="PatientVisitClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientVisitClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-              <folding>
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoleClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Standalone.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/Standalone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
-                <element signature="e#1728#1729#0" expanded="true" />
-                <element signature="e#1809#1810#0" expanded="true" />
-                <element signature="e#1859#1860#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Access.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java">
+      <file leaf-file-name="rich-text.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/rich-text.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatientModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patient-client-gui/pom.xml">
+      <file leaf-file-name="Test.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/Test.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceCreation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1870">
+              <caret line="126" column="39" lean-forward="false" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patient-client-app/pom.xml">
+      <file leaf-file-name="DocumentClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/DocumentClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InjectionModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java">
+      <file leaf-file-name="ListViewExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Patient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/Patient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -154,29 +321,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Dialog</find>
-      <find>deletionPossible</find>
-      <find>protln</find>
-      <find>textfield</find>
-      <find>ui</find>
-      <find>setui</find>
-      <find>seapatientService</find>
-      <find>DefaultPatientService</find>
-      <find>defaultPatientService</find>
-      <find>setCellValu</find>
-      <find>getId</find>
-      <find>setCellFact</find>
-      <find>gui</find>
-      <find>com.zeiss.gui</find>
-      <find>styles</find>
       <find>Patient</find>
       <find>public</find>
       <find>{(.*)}</find>
@@ -185,6 +337,28 @@
       <find>dialog.getDialogPane().setContent</find>
       <find>progressDialog</find>
       <find>vBox</find>
+      <find>role</find>
+      <find>us</find>
+      <find>userTabAccessSlider</find>
+      <find>\@Override\n</find>
+      <find>Tab</find>
+      <find>Integer</find>
+      <find>getUser</find>
+      <find>pre</find>
+      <find>size</find>
+      <find>role.label.roletabaccess.label</find>
+      <find>planningUnit</find>
+      <find>fals</find>
+      <find>clea</find>
+      <find>save</find>
+      <find>plan.table.planTime.column</find>
+      <find>show</find>
+      <find>bind</find>
+      <find>dialog</find>
+      <find>patientService.getPatientsById</find>
+      <find>tooltip</find>
+      <find>Document</find>
+      <find>load</find>
     </findStrings>
     <replaceStrings>
       <replace>PatientService</replace>
@@ -193,6 +367,7 @@
       <replace>PatientImpl</replace>
       <replace>;</replace>
       <replace>PatientVisitImpl</replace>
+      <replace>String</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -206,83 +381,79 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/update/UserUpdate.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/search/UserSearch.java" />
-        <option value="$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/UserClient.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/UserCreation.java" />
-        <option value="$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/UserImpl.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/GuiStarter.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/document-service-impl.iml" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DefaultUserService.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/UserClient.java" />
-        <option value="$PROJECT_DIR$/patient-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Messages.java" />
+        <option value="$PROJECT_DIR$/plan-service-api/src/main/java/com/zeiss/plan/service/api/Planning.java" />
+        <option value="$PROJECT_DIR$/plan-service-api/src/main/java/com/zeiss/plan/service/api/PlanService.java" />
+        <option value="$PROJECT_DIR$/plan-service-impl/src/main/java/com/zeiss/plan/service/impl/PlanningUnitImpl.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/update/PlanUpdate.java" />
+        <option value="$PROJECT_DIR$/plan-service-impl/src/main/java/com/zeiss/plan/service/impl/PlanClient.java" />
+        <option value="$PROJECT_DIR$/plan-service-impl/src/main/java/com/zeiss/plan/service/impl/DefaultPlanService.java" />
+        <option value="$PROJECT_DIR$/plan-service-impl/src/main/java/com/zeiss/plan/service/impl/PlanningImpl.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/UnSavedChanges.fxml" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/ConcatBindings.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/ConcatBindings.java" />
+        <option value="$PROJECT_DIR$/plan-service-api/src/main/java/com/zeiss/plan/service/api/PlanningUnit.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/ChangeType.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitWrapper.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitTimePicker.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/TransientModel.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/delete/PlanDeletion.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PersistUnsavedPlanChanges.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/PatientDiagone.fxml" />
         <option value="$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/PatientService.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DocumentImpl.java" />
-        <option value="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/Document.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/DocumentClientTest.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DocumentClient.java" />
-        <option value="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/Main.java" />
-        <option value="$PROJECT_DIR$/document-service-api/src/main/java/com/zeiss/document/service/api/DocumentService.java" />
-        <option value="$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DefaultDocumentService.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/TestDataGenerationInputParameters.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientVisitClear.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/TestDataGenerationOutput.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/TestDataGenerationService.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/TestDataPersistenceService.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationOutputTask.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationService.java" />
+        <option value="$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/PatientDiagone.fxml" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/UploadDocument.fxml" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OnScrollEvent.java" />
         <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DoPatientGenerate.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataPersistenceService.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/generatepatient/ProgressBar.fxml" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/PatientGeneratedProgressBar.java" />
-        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/user/service/api/UserService.java" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/user/service/api/RoleService.java" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/user/service/api/Role.java" />
-        <option value="$PROJECT_DIR$/role-service-impl/src/main/java/com.zeiss.user.service.impl/DefaultRoleService.java" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Role.java" />
-        <option value="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleClient.java" />
-        <option value="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleImpl.java" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/RoleService.java" />
-        <option value="$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/DefaultRoleService.java" />
-        <option value="$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_en.properties" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/DragContext.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PanAndZoomPane.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SceneGestures.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineMeasurement.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Delta.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Anchor.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/image-display.css" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JSONWriteExample.java" />
         <option value="$PROJECT_DIR$/patient-client-gui/pom.xml" />
-        <option value="$PROJECT_DIR$/patient-client-app/pom.xml" />
-        <option value="$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/BoundLine.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineManipulator.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Arrow.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineWithArrow.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SplineCurve.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineArrow.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineCurve.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFXDrawOnCanvas.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFX_DrawOnCanvas.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/Test.fxml" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/Standalone.java" />
+        <option value="$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/rich-text.css" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="patient-catalogue-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1318" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1534" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -326,41 +497,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
+              <item name="device-service-impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.zeiss.document.service.impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
+              <item name="document-service-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="com.zeiss.document.service.impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
@@ -394,6 +591,47 @@
             </path>
             <path>
               <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="create" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="zeiss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="zeiss" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patient-client-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="patient-service-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -451,154 +689,49 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="role-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patientcatalogueclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30055147" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/patient-client-gui/src/main/java" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.zeiss.gui.create" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\resources\sample" />
+      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\resources" />
+      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\java\com\zeiss\patient\client\gui\openpatient" />
       <recent name="C:\Project\patientrepository\patientapplication\client\document-service-impl\src\test\resources" />
       <recent name="C:\Project\patientrepository\patientapplication\client\document-service-impl\src\main\java\com.zeiss.document.service.impl" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\user-service-impl\src\main\java\com.zeiss.user.service.impl" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\user-service-api" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-app\src\main\java\com\zeiss\gui" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="ConcatBindings" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zeiss.patient.service.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\resources\sample" />
+      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\resources\com\zeiss\patient\client\gui" />
       <recent name="C:\Project\patientrepository\patientapplication\client" />
+      <recent name="C:\Project\patientrepository\patientapplication\client\document-service-api" />
       <recent name="C:\Project\patientrepository\patientapplication\client\patient-service-api\src\main\java\com.zeiss.patient.service.api" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\patient-client-gui\src\main\java\com.zeiss.gui\data" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\patient-service-impl\src\main\java\com.zeiss.gui\data" />
-      <recent name="C:\Project\patientrepository\patientapplication\client\patient-service-impl\src\main\java\com.zeiss.gui" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -613,13 +746,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="JavaFXDrawOnCanvas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zeiss.patient.client.gui.openpatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zeiss.patient.client.gui.openpatient.JavaFXDrawOnCanvas" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="patient-client-gui" />
+      <envs />
+    </configuration>
+    <configuration name="JavaFX_DrawOnCanvas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zeiss.patient.client.gui.openpatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zeiss.patient.client.gui.openpatient.JavaFX_DrawOnCanvas" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="patient-client-gui" />
+      <envs />
+    </configuration>
+    <configuration name="LineCurve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zeiss.patient.client.gui.openpatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zeiss.patient.client.gui.openpatient.LineCurve" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="patient-client-gui" />
+      <envs />
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -640,7 +830,7 @@
       <module name="patient-client-app" />
       <envs />
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.zeiss.patient.client.app.*" />
@@ -659,14 +849,14 @@
       <module name="patient-client-app" />
       <envs />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SplineCurve (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.zeiss.gui.module.*" />
+          <option name="PATTERN" value="smple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.zeiss.gui.Main" />
+      <option name="MAIN_CLASS_NAME" value="smple.SplineCurve" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -675,17 +865,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="client" />
+      <module name="patient-client-gui" />
       <envs />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SplineCurve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.zeiss.gui.module.*" />
+          <option name="PATTERN" value="com.zeiss.patient.client.gui.openpatient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.zeiss.gui.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.zeiss.patient.client.gui.openpatient.SplineCurve" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -710,81 +900,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="DocumentClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.zeiss.document.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="document-service-impl" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.zeiss.document.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.zeiss.document.service.impl.DocumentClientTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DocumentClientTest.testGetDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.zeiss.document.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="document-service-impl" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.zeiss.document.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.zeiss.document.service.impl.DocumentClientTest" />
-      <option name="METHOD_NAME" value="testGetDocument" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DocumentClientTest.testUploadDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.zeiss.document.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="document-service-impl" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.zeiss.document.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.zeiss.document.service.impl.DocumentClientTest" />
-      <option name="METHOD_NAME" value="testUploadDocument" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -847,18 +962,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main (3)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DocumentClientTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DocumentClientTest.testGetDocument" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DocumentClientTest.testUploadDocument" />
+      <item index="0" class="java.lang.String" itemvalue="Application.JavaFX_DrawOnCanvas" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SplineCurve (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LineCurve" />
+      <item index="3" class="java.lang.String" itemvalue="Application.JavaFXDrawOnCanvas" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main (3)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DocumentClientTest.testUploadDocument" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DocumentClientTest.testGetDocument" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DocumentClientTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JavaFX_DrawOnCanvas" />
+        <item index="2" class="java.lang.String" itemvalue="Application.JavaFXDrawOnCanvas" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LineCurve" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SplineCurve (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -928,36 +1044,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46834347" sideWeight="0.4824936" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6060606" sideWeight="0.4824936" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46921074" sideWeight="0.5175064" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292058" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40069383" sideWeight="0.93296325" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870772" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688562" sideWeight="0.5175064" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18073593" sideWeight="0.93296325" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870772" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22416738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784042" sideWeight="0.49829206" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24978651" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.424111" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27489176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06875" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06874329" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.49829206" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1002,13 +1118,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java</url>
-          <line>214</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java</url>
-          <line>186</line>
+          <line>270</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -1017,12 +1127,6 @@
           <line>128</line>
           <properties />
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-service-impl/src/main/java/com.zeiss.user.service.impl/DefaultUserService.java</url>
@@ -1061,18 +1165,6 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
-          <line>238</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
-          <line>191</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationService.java</url>
           <line>24</line>
           <properties />
@@ -1084,14 +1176,410 @@
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/RoleCreation.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/RoleCreation.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/RoleCreation.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/SliderWithLabeledThumb.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/SliderWithLabeledThumb.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java</url>
+          <line>281</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java</url>
+          <line>353</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientView.java</url>
+          <line>331</line>
+          <properties />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewScrollExample.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewScrollExample.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewScrollExample.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewExample.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>257</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/TransientModel.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/TransientModel.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/TransientModel.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitTimePicker.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitTimePicker.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PlanningUnitTimePicker.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>312</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>283</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PersistUnsavedPlanChanges.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PersistUnsavedPlanChanges.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/PersistUnsavedPlanChanges.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>366</line>
+          <properties />
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/plan/Plan.java</url>
+          <line>371</line>
+          <properties />
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java</url>
+          <line>373</line>
+          <properties />
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java</url>
+          <line>545</line>
+          <properties />
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DefaultDocumentService.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java</url>
+          <line>459</line>
+          <properties />
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DefaultDocumentService.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DefaultDocumentService.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/document-service-impl/src/main/java/com.zeiss.document.service.impl/DocumentClient.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java</url>
+          <line>190</line>
+          <properties />
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>244</line>
+          <properties />
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java</url>
+          <line>292</line>
+          <properties />
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFX_DrawOnCanvas.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFX_DrawOnCanvas.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="98" />
+      <option name="time" value="222" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="userService.getUsers()" language="JAVA" />
         <watch expression="chooseDocumentChoiceBox.getSelectionModel().getSelectedItem()" language="JAVA" />
         <watch expression="fileNames.indexOf(0)" language="JAVA" />
+        <watch expression="patientAccess.hasReadAccess()" language="JAVA" />
+        <watch expression="patientAccess" language="JAVA" />
+        <watch expression="newValue.getRoleType().patientAccessProperty().greaterThan(0)" language="JAVA" />
+        <watch expression="newValue.getRoleType().patientAccessProperty()" language="JAVA" />
+        <watch expression="ewValue.getRoleType().patientAccessProperty().isEqualTo(2)" language="JAVA" />
+        <watch expression="newValue.getRoleType().patientAccessProperty().isEqualTo(2)" language="JAVA" />
+        <watch expression="newValue.getRoleType().getPatientAccess().hasReadAccess()" language="JAVA" />
+        <watch expression="deviceService.getByDeviceName(deviceNameText.getText())" language="JAVA" />
+        <watch expression="transientModel.getUnchanged()" language="JAVA" />
+        <watch expression="transientModel" language="JAVA" />
+        <watch expression="(plusMinutes.isAfter(localTime)" language="JAVA" />
+        <watch expression="minusMinutes.isBefore(localTime)" language="JAVA" />
+        <watch expression="planningUnit.getId()" language="JAVA" />
+        <watch expression="planDate.accessibleTextProperty().get()" language="JAVA" />
+        <watch expression="planDate.getEditor().getText()" language="JAVA" />
+        <watch expression="planDate.getOnInputMethodTextChanged()" language="JAVA" />
+        <watch expression="getClass().getResource(&quot;sample/rich-text.css&quot;)" language="JAVA" />
+        <watch expression="getClass().getResource(&quot;/sample/rich-text.css&quot;)" language="JAVA" />
+        <watch expression="sizeCombo.getValue()" language="JAVA" />
+        <watch expression="sizeCombo.getValue()" language="JAVA" />
+        <watch expression="value.getClass()" language="JAVA" />
+        <watch expression="richTextContent.length" language="JAVA" />
+        <watch expression="FilenameUtils.removeExtension(selectedItem) +                         &quot;_metadata.&quot; + RTFX_FILE_EXTENSION" language="JAVA" />
+        <watch expression="widthInMm.getText()" language="JAVA" />
+        <watch expression="imageView.getFitWidth()" language="JAVA" />
+        <watch expression="widthInMm.getText()" language="JAVA" />
+        <watch expression="rowSpacing.getText()" language="JAVA" />
+        <watch expression="heightinMM.getText()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1102,496 +1590,437 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>fileNames.indexOf(0)</expression-string>
+        <expression-string>heightinMM.getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>chooseDocumentChoiceBox.getSelectionModel().getSelectedItem()</expression-string>
+        <expression-string>rowSpacing.getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>userService.getUsers()</expression-string>
+        <expression-string>widthInMm.getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>imageView.getFitWidth()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FilenameUtils.removeExtension(selectedItem) +                         &quot;_metadata.&quot; + RTFX_FILE_EXTENSION</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>richTextContent.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>value.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>value.getClass;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sizeCombo.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getClass().getResource(&quot;/sample/rich-text.css&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>3001</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/ZoomingPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/DragContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PanAndZoomPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SceneGestures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/UploadDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="262" column="92" lean-forward="true" selection-start-line="232" selection-start-column="8" selection-end-line="262" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="1753" column="16" lean-forward="false" selection-start-line="1753" selection-start-column="16" selection-end-line="1753" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/ParStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Delta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-right.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-left.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-justify.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/align-center.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/copy.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/cut.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/image-display.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="352" column="50" lean-forward="false" selection-start-line="352" selection-start-column="42" selection-end-line="352" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JSONWriteExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/shape/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Anchor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/BoundLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/shape/PathElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/canvas/GraphicsContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="2549" column="16" lean-forward="false" selection-start-line="2549" selection-start-column="16" selection-end-line="2549" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/TextStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/PatientDiagnose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineMeasurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/Arrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="75" column="24" lean-forward="false" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/SplineCurve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineWithArrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/LineCurve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="105" column="53" lean-forward="false" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/canvas/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFXDrawOnCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="44" column="57" lean-forward="false" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/JavaFX_DrawOnCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3009">
+          <caret line="177" column="60" lean-forward="false" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#4756#4757#0" expanded="false" />
+            <element signature="e#4784#4785#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/device-service-impl/src/main/java/com/zeiss/device/service/impl/DeviceClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#3500#3501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/DefaultPatientService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="510">
+          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/Standalone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/sample/rich-text.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/Test.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/create/DeviceCreation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="126" column="39" lean-forward="false" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/DocumentClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document-service-impl/src/test/java/com.zeiss.document.service.impl/ListViewExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-service-api/src/main/java/com/zeiss/patient/service/api/Patient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient-service-impl/src/main/java/com/zeiss/patient/service/impl/PatientVisitClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/concurrent/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="656" column="11" lean-forward="false" selection-start-line="656" selection-start-column="11" selection-end-line="656" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationInputParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/javafx/event/EventHandlerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DoPatientGenerate.java" />
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationOutputTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="88" column="60" lean-forward="true" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#4718#4719#0" expanded="false" />
-            <element signature="e#4752#4753#0" expanded="false" />
-            <element signature="e#4801#4802#0" expanded="false" />
-            <element signature="e#4847#4848#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataGenerationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#455#456#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/DataPersistenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#508#509#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/messages_de.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/concurrent/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="220" column="50" lean-forward="false" selection-start-line="220" selection-start-column="50" selection-end-line="220" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="383" column="22" lean-forward="false" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/Parent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/layout/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/layout/VBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="137" column="27" lean-forward="false" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="2408" column="0" lean-forward="false" selection-start-line="2408" selection-start-column="0" selection-end-line="2408" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/clear/PatientClear.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/generatepatient/GeneratePatient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/resources/com/zeiss/patient/client/gui/generatepatient/ProgressBar.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/clear/PatientClear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/GeneratePatient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="220" column="16" lean-forward="false" selection-start-line="220" selection-start-column="16" selection-end-line="220" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/openpatient/OpenPatient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5250">
-          <caret line="287" column="8" lean-forward="false" selection-start-line="287" selection-start-column="8" selection-end-line="287" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/PatientGeneratedProgressBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/beans/value/WritableBooleanValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/generate/ViewPreview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="74" column="31" lean-forward="false" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/control/TreeTableView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17724">
-          <caret line="938" column="0" lean-forward="false" selection-start-line="938" selection-start-column="0" selection-end-line="938" selection-end-column="0" />
-          <folding>
-            <element signature="e#44067#44068#0" expanded="false" />
-            <element signature="e#44112#44113#0" expanded="false" />
-            <element signature="e#49904#49905#0" expanded="false" />
-            <element signature="e#49948#49949#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/user/service/api/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/user/service/api/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com.zeiss.user.service.impl/DefaultRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service-api/src/main/java/com/zeiss/user/service/api/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1825#1826#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2145#2146#0" expanded="true" />
-            <element signature="e#2187#2188#0" expanded="true" />
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/DefaultRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-          <folding>
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/RoleClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-impl/src/main/java/com/zeiss/role/service/impl/EDIT_ROLE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role-service-api/src/main/java/com/zeiss/role/service/api/Access.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/src/main/java/com/zeiss/patient/client/gui/PatientModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-gui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patient-client-app/src/main/java/com/zeiss/patient/client/app/InjectionModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1728#1729#0" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="73" column="15" lean-forward="false" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/src/main/java/com/example/patientcatalogue/rest/visit/PatientVisitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1647,7 +2076,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>client</last-edited>
+          <last-edited>document-service-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

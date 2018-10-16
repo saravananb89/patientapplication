@@ -13,6 +13,5 @@ public interface RoleService {
 
     Role getByRoleName(String roleName);
 
-
     void clear();
 }

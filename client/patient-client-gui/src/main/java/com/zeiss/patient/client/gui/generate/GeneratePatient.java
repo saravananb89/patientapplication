@@ -1,10 +1,11 @@
 package com.zeiss.patient.client.gui.generate;
 
 import com.zeiss.patient.client.gui.GuiStarter;
-import com.zeiss.patient.client.gui.localeservice.LocaleService;
 import com.zeiss.patient.service.api.Patient;
 import com.zeiss.patient.service.api.PatientService;
 import com.zeiss.patient.service.api.PatientVisit;
+import com.zeiss.settings.service.api.LocaleService;
+import com.zeiss.user.service.api.User;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -67,6 +68,8 @@ public class GeneratePatient {
     private DataGenerationService dataGenerationService;
     @Inject
     private DataPersistenceService dataPersistenceService;
+    @Inject
+    private com.google.inject.Provider<User> userProvider;
 
     private final PatientService patientService;
     private final PatientGeneratedProgressBar patientGeneratedProgressBar;

@@ -1,6 +1,9 @@
 package com.zeiss.patient.client.gui;
 
 import com.google.inject.Inject;
+import com.google.inject.Provider;
+import com.zeiss.role.service.api.Access;
+import com.zeiss.role.service.api.Role;
 import com.zeiss.user.service.api.User;
 import com.zeiss.user.service.api.UserService;
 import javafx.application.Platform;
@@ -32,6 +35,10 @@ public class GuiStarter {
     private PatientView patientView;
     @Inject
     private UserService userService;
+    @Inject
+    private Provider<User> userProvider;
+    @Inject
+    private Provider<Role> roleProvider;
 
     public void start(Stage primaryStage) {
         loadLoginDialog(primaryStage);
@@ -53,12 +60,24 @@ public class GuiStarter {
                 statusLabel = "Logged in as " + user.getUserName();
                 dlg.hide();
                 primaryStage.close();
+                patientView.getLocaleService().setLoggedInUser(user);
                 loadStage(primaryStage, user.getPreferredLocale(), false);
 
             } else if ((username.getText().equals("user") && password.getText().equals("user"))) {
+                User user = userProvider.get();
+                user.setUserName("user");
+                Role role = roleProvider.get();
+                role.setRoleAccess(Access.READ_WRITE_ACCESS);
+                role.setPatientAccess(Access.READ_WRITE_ACCESS);
+                role.setUserAccess(Access.READ_WRITE_ACCESS);
+                role.setVisitAccess(Access.READ_WRITE_ACCESS);
+                role.setDeviceAccess(Access.READ_WRITE_ACCESS);
+                role.setRoleName("user");
+                user.setRoleType(role);
                 statusLabel = "Logged in as " + username.getText();
                 dlg.hide();
                 primaryStage.close();
+                patientView.getLocaleService().setLoggedInUser(user);
                 loadStage(primaryStage, Locale.GERMAN, false);
             }
         });

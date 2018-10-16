@@ -1,7 +1,9 @@
 package com.zeiss.patient.client.gui.clear;
 
+import com.google.inject.Provider;
 import com.zeiss.patient.client.gui.GuiStarter;
 import com.zeiss.patient.service.api.PatientService;
+import com.zeiss.user.service.api.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -26,6 +28,8 @@ public class PatientVisitClear {
 
     @Inject
     private GuiStarter guiStarter;
+    @Inject
+    private Provider<User> userProvider;
 
     public PatientVisitClear() {
     }
@@ -35,7 +39,7 @@ public class PatientVisitClear {
         //do nothing
     }
 
-    public void showPatientDialog(PatientService patientService, Stage parentStage, Locale locale){
+    public void showPatientDialog(PatientService patientService, Stage parentStage, Locale locale) {
         loadFxml(locale);
         Dialog<String> dialog = new Dialog();
 
@@ -43,7 +47,7 @@ public class PatientVisitClear {
 
         dialog.setTitle("Patient Delete All");
 
-        ok.setOnAction(event -> clearAction(patientService,dialog,parentStage,locale));
+        ok.setOnAction(event -> clearAction(patientService, dialog, parentStage, locale));
         cancel.setOnAction(event -> close(dialog));
 
         dialog.setHeight(Control.USE_COMPUTED_SIZE);
@@ -69,7 +73,7 @@ public class PatientVisitClear {
 
     private void clearAction(PatientService patientService, Dialog<String> dialog, Stage parentStage, Locale locale) {
         clear(patientService);
-        guiStarter.loadStage(parentStage,locale,false);
+        guiStarter.loadStage(parentStage, locale, false);
         close(dialog);
     }
 

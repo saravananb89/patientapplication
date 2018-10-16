@@ -1,38 +1,44 @@
 package com.zeiss.role.service.api;
 
-import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.StringProperty;
 
 public interface Role {
 
     void setRoleName(String roleName);
 
-    void setPatientTabAccess(Integer patientTabAccess);
+    void setPatientAccess(Access patientAccess);
 
-    void setVisitTabAccess(Integer visitTabAccess);
+    void setVisitAccess(Access visitAccess);
 
-    void setUserTabAccess(Integer userTabAccess);
+    void setUserAccess(Access userAccess);
 
-    void setRoleTabAccess(Integer roleTabAccess);
+    void setRoleAccess(Access roleAccess);
+
+    void setDeviceAccess(Access deviceAccess);
 
     String getRoleName();
 
     StringProperty roleNameProperty();
 
-    Integer getPatientTabAccess();
+    Access getPatientAccess();
 
-    IntegerProperty patientTabAccessProperty();
+    ObjectProperty<Access> patientAccessProperty();
 
-    Integer getVisitTabAccess();
+    Access getVisitAccess();
 
-    IntegerProperty visitTabAccessProperty();
+    ObjectProperty<Access>  visitAccessProperty();
 
-    Integer getUserTabAccess();
+    Access getUserAccess();
 
-    IntegerProperty userTabAccessProperty();
+    ObjectProperty<Access>  userAccessProperty();
 
-    Integer getRoleTabAccess();
+    Access getRoleAccess();
 
-    IntegerProperty roleTabAccessProperty();
+    ObjectProperty<Access>  roleAccessProperty();
+
+    Access getDeviceAccess();
+
+    ObjectProperty<Access>  deviceAccessProperty();
 
 }

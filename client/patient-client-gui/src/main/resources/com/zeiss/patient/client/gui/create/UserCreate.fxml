@@ -13,7 +13,7 @@
    <children>
       <HBox prefWidth="200.0">
          <children>
-            <Label fx:id="firstName" prefWidth="100.0" text="%role.label.username.label" />
+            <Label fx:id="firstNameLabel" prefWidth="100.0" text="%user.label.username.label" />
             <TextField id="firstNameText" fx:id="userName" />
          </children>
          <padding>
@@ -22,7 +22,7 @@
       </HBox>
       <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0">
          <children>
-            <Label fx:id="firstName1" prefWidth="100.0" text="%role.label.password.label" />
+            <Label fx:id="passwordLabel" prefWidth="100.0" text="%user.label.password.label" />
             <PasswordField fx:id="password" />
          </children>
          <padding>
@@ -31,8 +31,17 @@
       </HBox>
       <HBox prefWidth="200.0">
          <children>
-            <Label id="lastName" fx:id="lastName" prefWidth="100.0" text="%role.tableview.tablecolumn.preferredlocale.label" />
+            <Label id="lastName" fx:id="preferredLocaleLabel" prefWidth="100.0" text="%user.tableview.tablecolumn.preferredlocale.label" />
             <ChoiceBox fx:id="preferredLocale" prefWidth="150.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefWidth="200.0" spacing="5.0">
+         <children>
+            <Label fx:id="RoleLabel" prefWidth="100.0" text="%user.create.role.label" />
+            <ChoiceBox fx:id="roleChoiceBox" prefWidth="150.0" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

@@ -85,6 +85,39 @@
             <artifactId>patient-service-api</artifactId>
             <version>2.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.gluonhq/charm-down-core -->
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>charm-down-core</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.gluonhq/charm-glisten -->
+        <!-- https://mvnrepository.com/artifact/com.gluonhq/charm-glisten -->
+
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx-samples -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx-samples</artifactId>
+            <version>8.20.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>9.0.0</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>fxsampler</artifactId>
+            <version>1.0.5</version>
+        </dependency>
 
     </dependencies>
 

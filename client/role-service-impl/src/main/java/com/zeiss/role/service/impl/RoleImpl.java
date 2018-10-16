@@ -1,8 +1,9 @@
 package com.zeiss.role.service.impl;
 
+import com.zeiss.role.service.api.Access;
 import com.zeiss.role.service.api.Role;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -10,29 +11,30 @@ import java.util.Objects;
 
 public class RoleImpl implements Role {
 
-    private final StringProperty roleName = new SimpleStringProperty();
-    private final IntegerProperty patientTabAccess = new SimpleIntegerProperty();
-    private final IntegerProperty visitTabAccess = new SimpleIntegerProperty();
-    private final IntegerProperty userTabAccess = new SimpleIntegerProperty();
-    private final IntegerProperty roleTabAccess = new SimpleIntegerProperty();
+    private final StringProperty roleName = new SimpleStringProperty("");
+    private final ObjectProperty<Access> patientAccess = new SimpleObjectProperty<>(Access.NO_ACCESS);
+    private final ObjectProperty<Access> visitAccess = new SimpleObjectProperty<>(Access.NO_ACCESS);
+    private final ObjectProperty<Access> userAccess = new SimpleObjectProperty<>(Access.NO_ACCESS);
+    private final ObjectProperty<Access> roleAccess = new SimpleObjectProperty<>(Access.NO_ACCESS);
+    private final ObjectProperty<Access> deviceAccess = new SimpleObjectProperty<>(Access.NO_ACCESS);
 
-    public RoleImpl(String roleName, Integer patientTabAccess, Integer visitTabAccess, Integer userTabAccess, Integer roleTabAccess) {
+    RoleImpl(String roleName, Access patientAccess, Access visitAccess, Access userAccess, Access roleAccess,
+             Access deviceAccess) {
         this.roleName.setValue(roleName);
-        this.patientTabAccess.setValue(patientTabAccess);
-        this.visitTabAccess.setValue(visitTabAccess);
-        this.userTabAccess.setValue(userTabAccess);
-        this.roleTabAccess.setValue(roleTabAccess);
+        this.patientAccess.setValue(patientAccess);
+        this.visitAccess.setValue(visitAccess);
+        this.userAccess.setValue(userAccess);
+        this.roleAccess.setValue(roleAccess);
+        this.deviceAccess.setValue(deviceAccess);
     }
 
     public RoleImpl() {
     }
 
-    @Override
     public String getRoleName() {
         return roleName.get();
     }
 
-    @Override
     public StringProperty roleNameProperty() {
         return roleName;
     }
@@ -41,60 +43,67 @@ public class RoleImpl implements Role {
         this.roleName.set(roleName);
     }
 
-    @Override
-    public Integer getPatientTabAccess() {
-        return patientTabAccess.get();
+    public Access getPatientAccess() {
+        return patientAccess.get();
+    }
+
+    public ObjectProperty<Access> patientAccessProperty() {
+        return patientAccess;
+    }
+
+    public void setPatientAccess(Access patientAccess) {
+        this.patientAccess.set(patientAccess);
+    }
+
+    public Access getVisitAccess() {
+        return visitAccess.get();
+    }
+
+    public ObjectProperty<Access> visitAccessProperty() {
+        return visitAccess;
+    }
+
+    public void setVisitAccess(Access visitAccess) {
+        this.visitAccess.set(visitAccess);
+    }
+
+    public Access getUserAccess() {
+        return userAccess.get();
     }
 
     @Override
-    public IntegerProperty patientTabAccessProperty() {
-        return patientTabAccess;
+    public ObjectProperty<Access> userAccessProperty() {
+        return userAccess;
     }
 
-    public void setPatientTabAccess(Integer patientTabAccess) {
-        this.patientTabAccess.set(patientTabAccess);
+    public void setUserAccess(Access userAccess) {
+        this.userAccess.set(userAccess);
     }
 
-    @Override
-    public Integer getVisitTabAccess() {
-        return visitTabAccess.get();
+    public Access getRoleAccess() {
+        return roleAccess.get();
     }
 
-    @Override
-    public IntegerProperty visitTabAccessProperty() {
-        return visitTabAccess;
+    public ObjectProperty<Access> roleAccessProperty() {
+        return roleAccess;
     }
 
-    public void setVisitTabAccess(Integer visitTabAccess) {
-        this.visitTabAccess.set(visitTabAccess);
-    }
-
-    @Override
-    public Integer getUserTabAccess() {
-        return userTabAccess.get();
+    public void setRoleAccess(Access roleAccess) {
+        this.roleAccess.set(roleAccess);
     }
 
     @Override
-    public IntegerProperty userTabAccessProperty() {
-        return userTabAccess;
-    }
-
-    public void setUserTabAccess(Integer userTabAccess) {
-        this.userTabAccess.set(userTabAccess);
+    public Access getDeviceAccess() {
+        return deviceAccess.get();
     }
 
     @Override
-    public Integer getRoleTabAccess() {
-        return roleTabAccess.get();
+    public ObjectProperty<Access> deviceAccessProperty() {
+        return deviceAccess;
     }
 
-    @Override
-    public IntegerProperty roleTabAccessProperty() {
-        return roleTabAccess;
-    }
-
-    public void setRoleTabAccess(Integer roleTabAccess) {
-        this.roleTabAccess.set(roleTabAccess);
+    public void setDeviceAccess(Access deviceAccess) {
+        this.deviceAccess.set(deviceAccess);
     }
 
     @Override
@@ -115,10 +124,11 @@ public class RoleImpl implements Role {
     public String toString() {
         return "RoleImpl{" +
                 "roleName=" + roleName +
-                ", patientTabAccess=" + patientTabAccess +
-                ", visitTabAccess=" + visitTabAccess +
-                ", userTabAccess=" + userTabAccess +
-                ", roleTabAccess=" + roleTabAccess +
+                ", patientAccess=" + patientAccess +
+                ", visitAccess=" + visitAccess +
+                ", userAccess=" + userAccess +
+                ", roleAccess=" + roleAccess +
+                ", deviceAccess=" + deviceAccess +
                 '}';
     }
 }
