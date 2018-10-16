@@ -1,8 +1,5 @@
 package com.example.patientcatalogue.service.patient;
 
-import com.example.patientcatalogue.data.patient.PatientDTO;
-import com.example.patientcatalogue.service.visit.PatientVisit;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -60,8 +57,12 @@ public interface PatientService {
      * @param lastName
      * @return
      */
-    List<Patient> findByLastName(String lastName);
+    List<Patient> findByLastNameLikeIgnoreCase(String lastName);
 
-    List<Patient> findByFirstNameAndLastName(String firstName, String lastName);
+    List<Patient> findByFirstName(String firstName);
+
+    List<Patient> findByFirstNameLikeIgnoreCase(String firstName);
+
+    List<Patient> findByFirstNameAndLastNameLikeIgnoreCase(String firstName, String lastName);
 
 }

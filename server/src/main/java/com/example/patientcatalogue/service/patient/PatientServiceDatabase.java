@@ -54,13 +54,23 @@ public class PatientServiceDatabase implements PatientService {
     }
 
     @Override
-    public List<Patient> findByLastName(String lastName) {
-        return patientDTORepository.findByLastName(lastName).stream().map(PatientDTO::getPatient).collect(Collectors.toList());
+    public List<Patient> findByLastNameLikeIgnoreCase(String lastName) {
+        return patientDTORepository.findByLastNameLikeIgnoreCase(lastName).stream().map(PatientDTO::getPatient).collect(Collectors.toList());
     }
 
     @Override
-    public List<Patient> findByFirstNameAndLastName(String firstName, String lastName) {
-        return patientDTORepository.findByFirstNameAndLastName(firstName, lastName).stream().
+    public List<Patient> findByFirstName(String firstName) {
+        return patientDTORepository.findByFirstName(firstName).stream().map(PatientDTO::getPatient).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Patient> findByFirstNameLikeIgnoreCase(String firstName) {
+        return patientDTORepository.findByFirstNameLikeIgnoreCase(firstName).stream().map(PatientDTO::getPatient).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Patient> findByFirstNameAndLastNameLikeIgnoreCase(String firstName, String lastName) {
+        return patientDTORepository.findByFirstNameAndLastNameLikeIgnoreCase(firstName, lastName).stream().
                 map(PatientDTO::getPatient).collect(Collectors.toList());
     }
 

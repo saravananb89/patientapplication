@@ -35,18 +35,18 @@ public class RoleController {
     @RequestMapping(method = RequestMethod.POST)
     public String create(@RequestBody Map<String, Object> body) {
         assert body.containsKey("roleName") && body.containsKey("patientAccess") && body.containsKey("visitAccess")
-                && body.containsKey("userAccess") && body.containsKey("roleAccess");
+                && body.containsKey("userAccess") && body.containsKey("roleAccess") && body.containsKey("deviceAccess");
         return repository.create((String) body.get("roleName"), (Integer) body.get("patientAccess"), (Integer) body.get("visitAccess"),
-                (Integer) body.get("userAccess"), (Integer) body.get("roleAccess"));
+                (Integer) body.get("userAccess"), (Integer) body.get("roleAccess"), (Integer) body.get("deviceAccess"));
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/{roleName}")
     public boolean update(@PathVariable String roleName, @RequestBody Map<String, Object> body) {
         assert roleName != null && !roleName.isEmpty();
         assert body.containsKey("roleName") && body.containsKey("patientAccess") && body.containsKey("visitAccess")
-                && body.containsKey("userAccess") && body.containsKey("roleAccess");
+                && body.containsKey("userAccess") && body.containsKey("roleAccess") && body.containsKey("deviceAccess");
         return repository.update((String) body.get("roleName"), (Integer) body.get("patientAccess"), (Integer) body.get("visitAccess"),
-                (Integer) body.get("userAccess"), (Integer) body.get("roleAccess"));
+                (Integer) body.get("userAccess"), (Integer) body.get("roleAccess"), (Integer) body.get("deviceAccess"));
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/{roleName}")

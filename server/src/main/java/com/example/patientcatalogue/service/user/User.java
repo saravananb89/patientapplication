@@ -15,4 +15,5 @@ public class User {
     private String password;
     private String preferredLocale;
     private LocalDate lastLogin;
+    private String role;
 }

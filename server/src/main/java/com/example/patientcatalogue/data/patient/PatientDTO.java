@@ -6,20 +6,23 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
 
-@Entity @Table (name="patienttable")
+@Entity
+@Table(name = "patienttable")
 public class PatientDTO {
 
-    @Column(name="id") @Id @GeneratedValue (strategy=GenerationType.AUTO)
+    @Column(name = "id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name="firstName")
+    @Column(name = "firstName")
     private String firstName;
-    @Column(name="lastName")
+    @Column(name = "lastName")
     private String lastName;
-    @Column(name="dob")
+    @Column(name = "dob")
     private LocalDate dob;
-    @Column(name="age")
+    @Column(name = "age")
     private String age;
-    @Column(name="email")
+    @Column(name = "email")
     private String email;
 
     public Integer getId() {
@@ -70,8 +73,8 @@ public class PatientDTO {
         this.email = email;
     }
 
-    public Patient getPatient(){
-        return new Patient(String.valueOf(id),firstName,lastName,dob,age,email);
+    public Patient getPatient() {
+        return new Patient("" + String.valueOf(id), firstName, lastName, dob, age, email);
     }
 
     public PatientDTO() {

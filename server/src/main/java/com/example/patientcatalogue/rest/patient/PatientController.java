@@ -1,24 +1,16 @@
 package com.example.patientcatalogue.rest.patient;
 
+import com.example.patientcatalogue.service.patient.Patient;
+import com.example.patientcatalogue.service.patient.PatientService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.example.patientcatalogue.service.patient.Patient;
-import com.example.patientcatalogue.service.patient.PatientService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
@@ -72,14 +64,37 @@ public class PatientController {
         return repository.delete(id);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/search/{lastName}")
+    @RequestMapping(method = RequestMethod.GET, value = "/search_lastname/{lastName}")
     public Set<Patient> searchByLastName(@PathVariable String lastName) {
-        return repository.findByLastName(lastName).stream().collect(Collectors.toSet());
+        lastName = appendLike(lastName);
+        return repository.findByLastNameLikeIgnoreCase(lastName).stream().collect(Collectors.toSet());
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/search/{firstName}/{lastName}")
+    @RequestMapping(method = RequestMethod.GET, value = "/search_firstname/{firstName}")
+    public Set<Patient> searchByFirstName(@PathVariable String firstName) {
+        firstName = appendLike(firstName);
+        return repository.findByFirstNameLikeIgnoreCase(firstName).stream().collect(Collectors.toSet());
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/search_both/{firstName}/{lastName}")
     public Set<Patient> searchByFirstNameAndLastName(@PathVariable String firstName, @PathVariable String lastName) {
-        return repository.findByFirstNameAndLastName(firstName, lastName).stream().collect(Collectors.toSet());
+        firstName = appendLike(firstName);
+        lastName = appendLike(lastName);
+        return repository.findByFirstNameAndLastNameLikeIgnoreCase(firstName, lastName).stream().collect(Collectors.toSet());
+    }
+
+    private String appendLike(@PathVariable String name) {
+        boolean startsWith = name.startsWith("%");
+        if (!startsWith) {
+            name = "%" + name;
+        }
+
+        boolean endsWith = name.endsWith("%");
+
+        if (!endsWith) {
+            name = name + "%";
+        }
+        return name;
     }
 
     @RequestMapping(method = RequestMethod.DELETE)

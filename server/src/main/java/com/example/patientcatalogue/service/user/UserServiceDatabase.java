@@ -29,14 +29,14 @@ public class UserServiceDatabase implements UserService {
     }
 
     @Override
-    public String create(String userName, String password, String preferredLocale, LocalDate lastLogin) {
-        UserDTO userDTO = new UserDTO(userName, password, preferredLocale, lastLogin);
+    public String create(String userName, String password, String preferredLocale, LocalDate lastLogin, String role) {
+        UserDTO userDTO = new UserDTO(userName, password, preferredLocale, lastLogin, role);
         return String.valueOf(userDTORepository.save(userDTO).getUserName());
     }
 
     @Override
-    public boolean update(String userName, String password, String preferredLocale, LocalDate lastLogin) {
-        UserDTO userDTO = new UserDTO(userName, password, preferredLocale, lastLogin);
+    public boolean update(String userName, String password, String preferredLocale, LocalDate lastLogin, String role) {
+        UserDTO userDTO = new UserDTO(userName, password, preferredLocale, lastLogin, role);
         userDTORepository.save(userDTO);
         return true;
     }

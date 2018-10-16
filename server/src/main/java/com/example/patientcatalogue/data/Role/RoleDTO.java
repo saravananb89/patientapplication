@@ -23,16 +23,20 @@ public class RoleDTO {
     private Integer userAccess;
     @Column(name = "roleAccess")
     private Integer roleAccess;
+    @Column(name = "deviceAccess")
+    private Integer deviceAccess;
 
     public RoleDTO() {
     }
 
-    public RoleDTO(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess) {
+    public RoleDTO(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess,
+                   Integer roleAccess, Integer deviceAccess) {
         this.roleName = roleName;
         this.patientAccess = patientAccess;
         this.visitAccess = visitAccess;
         this.userAccess = userAccess;
         this.roleAccess = roleAccess;
+        this.deviceAccess = deviceAccess;
     }
 
     public String getRoleName() {
@@ -75,8 +79,16 @@ public class RoleDTO {
         this.roleAccess = roleAccess;
     }
 
+    public Integer getDeviceAccess() {
+        return deviceAccess;
+    }
+
+    public void setDeviceAccess(Integer deviceAccess) {
+        this.deviceAccess = deviceAccess;
+    }
+
     public Role getRole() {
-        return new Role(roleName, patientAccess, visitAccess, userAccess, roleAccess);
+        return new Role(roleName, patientAccess, visitAccess, userAccess, roleAccess, deviceAccess);
     }
 
     @Override

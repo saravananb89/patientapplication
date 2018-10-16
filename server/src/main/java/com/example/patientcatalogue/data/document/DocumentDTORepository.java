@@ -1,6 +1,7 @@
 package com.example.patientcatalogue.data.document;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -54,6 +55,7 @@ public class DocumentDTORepository implements DocumentDTORepositoryInterface {
                 documentDTO.setFileName(file.getName());
                 try {
                     documentDTO.setFileContent(Files.readAllBytes(file.toPath()));
+                    documentDTO.setFileExtension(FilenameUtils.getExtension(file.getName()));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

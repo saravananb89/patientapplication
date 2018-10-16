@@ -26,14 +26,16 @@ public class RoleServiceDatabase implements RoleService {
     }
 
     @Override
-    public String create(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess) {
-        RoleDTO roleDTO = new RoleDTO(roleName, patientAccess, visitAccess, userAccess, roleAccess);
+    public String create(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess,
+                         Integer roleAccess, Integer deviceAccess) {
+        RoleDTO roleDTO = new RoleDTO(roleName, patientAccess, visitAccess, userAccess, roleAccess, deviceAccess);
         return String.valueOf(roleDTORepository.save(roleDTO).getRoleName());
     }
 
     @Override
-    public boolean update(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess) {
-        RoleDTO roleDTO = new RoleDTO(roleName, patientAccess, visitAccess, userAccess, roleAccess);
+    public boolean update(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess,
+                          Integer roleAccess, Integer deviceAccess) {
+        RoleDTO roleDTO = new RoleDTO(roleName, patientAccess, visitAccess, userAccess, roleAccess, deviceAccess);
         roleDTORepository.save(roleDTO);
         return true;
     }

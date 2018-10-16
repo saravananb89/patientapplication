@@ -25,7 +25,7 @@ public interface RoleService {
      * @param roleAccess
      * @return
      */
-    String create(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess);
+    String create(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess, Integer deviceAccess);
 
     /**
      *
@@ -36,7 +36,7 @@ public interface RoleService {
      * @param roleAccess
      * @return
      */
-    boolean update(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess);
+    boolean update(String roleName, Integer patientAccess, Integer visitAccess, Integer userAccess, Integer roleAccess, Integer deviceAccess);
 
     /**
      *

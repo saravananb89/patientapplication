@@ -14,5 +14,6 @@ public class Role {
     private Integer visitAccess;
     private Integer userAccess;
     private Integer roleAccess;
+    private Integer deviceAccess;
 
 }

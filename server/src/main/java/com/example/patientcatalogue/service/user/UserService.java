@@ -1,7 +1,5 @@
 package com.example.patientcatalogue.service.user;
 
-import com.example.patientcatalogue.service.patient.Patient;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -30,7 +28,7 @@ public interface UserService {
      * @param lastLogin
      * @return
      */
-    String create(String userName, String password, String preferredLocale, LocalDate lastLogin);
+    String create(String userName, String password, String preferredLocale, LocalDate lastLogin, String role);
 
     /**
      *
@@ -40,7 +38,7 @@ public interface UserService {
      * @param lastLogin
      * @return
      */
-    boolean update(String userName, String password, String preferredLocale, LocalDate lastLogin);
+    boolean update(String userName, String password, String preferredLocale, LocalDate lastLogin, String role);
 
     /**
      *

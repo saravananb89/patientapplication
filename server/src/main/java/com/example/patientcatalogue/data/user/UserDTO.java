@@ -1,7 +1,6 @@
 package com.example.patientcatalogue.data.user;
 
 
-import com.example.patientcatalogue.service.patient.Patient;
 import com.example.patientcatalogue.service.user.User;
 
 import javax.persistence.Column;
@@ -23,15 +22,18 @@ public class UserDTO {
     private String preferredLocale;
     @Column(name = "lastLogin")
     private LocalDate lastLogin;
+    @Column(name = "role")
+    private String role;
 
     public UserDTO() {
     }
 
-    public UserDTO(String userName, String password, String preferredLocale, LocalDate lastLogin) {
+    public UserDTO(String userName, String password, String preferredLocale, LocalDate lastLogin, String role) {
         this.userName = userName;
         this.password = password;
         this.preferredLocale = preferredLocale;
         this.lastLogin = lastLogin;
+        this.role = role;
     }
 
     public String getUserName() {
@@ -66,8 +68,16 @@ public class UserDTO {
         this.lastLogin = lastLogin;
     }
 
-    public User getUser(){
-        return new User(userName,password,preferredLocale,lastLogin);
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public User getUser() {
+        return new User(userName, password, preferredLocale, lastLogin, role);
     }
 
     @Override

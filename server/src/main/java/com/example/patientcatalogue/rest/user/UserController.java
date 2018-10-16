@@ -38,25 +38,25 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     public String create(@RequestBody Map<String, Object> body) {
         assert body.containsKey("userName") && body.containsKey("password") && body.containsKey("preferredLocale")
-                && body.containsKey("lastLogin");
+                && body.containsKey("lastLogin") &&  body.containsKey("role");
         LinkedHashMap<String, Object> lastLogin = (LinkedHashMap<String, Object>) body.get("lastLogin");
         LocalDate localDate = lastLogin == null ? null : LocalDate.of((Integer) lastLogin.get("year"), (Integer) lastLogin.get("monthValue"),
                 (Integer) lastLogin.get("dayOfMonth"));
         return repository.create((String) body.get("userName"), (String) body.get("password"), (String) body.get("preferredLocale"),
-                localDate);
+                localDate, (String) body.get("role"));
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/{userName}")
     public boolean update(@PathVariable String userName, @RequestBody Map<String, Object> body) {
         assert userName != null && !userName.isEmpty();
         assert body.containsKey("userName") && body.containsKey("password") && body.containsKey("preferredLocale")
-                && body.containsKey("lastLogin");
+                && body.containsKey("lastLogin") &&  body.containsKey("role");
         LinkedHashMap<String, Object> lastLogin = (LinkedHashMap<String, Object>) body.get("lastLogin");
         LocalDate localDate = lastLogin == null ? null : LocalDate.of((Integer) lastLogin.get("year"), (Integer) lastLogin.get("monthValue"),
                 (Integer) lastLogin.get("dayOfMonth"));
         return repository.update((String) body.get("userName"), (String) body.get("password"),
                 (String) body.get("preferredLocale"),
-                localDate);
+                localDate, (String) body.get("role"));
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/{userName}")

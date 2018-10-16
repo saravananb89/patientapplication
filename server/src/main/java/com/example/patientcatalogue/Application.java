@@ -4,10 +4,14 @@ import com.example.patientcatalogue.data.document.DocumentDTORepository;
 import com.example.patientcatalogue.data.document.DocumentDTORepositoryInterface;
 import com.example.patientcatalogue.service.Role.RoleService;
 import com.example.patientcatalogue.service.Role.RoleServiceDatabase;
+import com.example.patientcatalogue.service.device.DeviceService;
+import com.example.patientcatalogue.service.device.DeviceServiceDatabase;
 import com.example.patientcatalogue.service.document.DocumentService;
 import com.example.patientcatalogue.service.document.FileBasedDocumentService;
 import com.example.patientcatalogue.service.patient.PatientService;
 import com.example.patientcatalogue.service.patient.PatientServiceDatabase;
+import com.example.patientcatalogue.service.patientplan.PlanService;
+import com.example.patientcatalogue.service.patientplan.PlanServiceDatabase;
 import com.example.patientcatalogue.service.user.UserService;
 import com.example.patientcatalogue.service.user.UserServiceDatabase;
 import com.example.patientcatalogue.service.visit.PatientVisitService;
@@ -53,6 +57,16 @@ public class Application {
     @Bean
     RoleService roleRepository() {
         return new RoleServiceDatabase();
+    }
+
+    @Bean
+    DeviceService deviceRepository() {
+        return new DeviceServiceDatabase();
+    }
+
+    @Bean
+    PlanService planRepository() {
+        return new PlanServiceDatabase();
     }
 
 }
